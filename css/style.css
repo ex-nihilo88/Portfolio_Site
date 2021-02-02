@@ -16,7 +16,7 @@ ul {
 }
 
 body {
-  background-color: rgba(244,244,244,1);
+  background-color: rgba(255,255,255,1);
   font-family: 'Roboto', helvetica;
   color: rgba(15,15,15,1);
   font-size: 16px;
@@ -116,16 +116,16 @@ img {
 
 /* logo style */
 .my-logo {
-  max-width: 200px;
-  max-height: 122px;
-  object-fit: cover;
+  max-height: 125px;
+  max-width: 350px;
+  object-fit: scale-down;
 }
 
 /* portrait style*/
 .portrait {
   max-width: 326px;
   max-height: 326px;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 /* hyper link style*/
@@ -140,4 +140,23 @@ img {
 .hyper-link:hover {
   color: rgba(49,116,176,1);
   text-decoration: underline;
+}
+
+/* navigation header styling */
+.nav-header {
+  background-color: rgba(244,244,244,1);
+}
+
+.menu-link {
+  color: rgba(15,15,15,1);
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+/* footer styling */
+.contact-footer {
+  background-color: rgba(244,244,244,1)
 }

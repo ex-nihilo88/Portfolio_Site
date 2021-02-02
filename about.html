@@ -21,12 +21,15 @@
   <!-- header -->
   <header class="nav-header" id="nav-header">
     <div>
-      <img class="my-logo" id="my-logo" src="img/Misc/my_logo.png" alt="Authors Logo">
-      <nav>
+      <picture>
+        <source srcset="img/misc/my_logo@0.5x.png" class="my-logo" id="my-logo" media="(max-width:767px)">
+        <img src="img/misc/my_logo.png" class="my-logo" id="my-logo" alt="Logo">
+      </picture>
+      <nav class="menu-items" id="menu-items">
         <ul>
-          <li><a class="menu-link" href="index.html">Projects</a></li>
-          <li><a class="menu-link" href="about.html">About</a></li>
-          <li><a class="menu-link" href="#contact">Contact</a></li>
+          <li><a class="menu-link" href="index.html"><h4>Projects</h4></a></li>
+          <li><a class="menu-link" href="about.html"><h4>About</h4></a></li>
+          <li><a class="menu-link" href="#contact"><h4>Contact</h4></a></li>
         </ul>
       </nav>
     </div>
