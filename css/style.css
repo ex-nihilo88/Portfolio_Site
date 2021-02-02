@@ -10,6 +10,7 @@ Posable Blue: #5CAAFF; rgba(92,170,255,1)
 Food For You Yellow: #EDB939; rgba(237,185,57,1)
 Buyit Blue: #3174B0; rgba(49,116,176,1)
 */
+
 ul {
   list-style: none;
 }
@@ -49,6 +50,7 @@ img {
   width: 100%;
 }
 
+/* button styles */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: rgba(15,15,15,1);
@@ -105,20 +107,37 @@ img {
   border: 3px solid rgba(15,15,15,1);
 }
 
+/* social button style */
 .social-button {
   width: 50px;
   height: 50px;
   object-fit: scale-down;
 }
 
+/* logo style */
 .my-logo {
   max-width: 200px;
   max-height: 122px;
   object-fit: cover;
 }
 
+/* portrait style*/
 .portrait {
   max-width: 326px;
   max-height: 326px;
   object-fit: cover;
+}
+
+/* hyper link style*/
+.hyper-link {
+  color: rgba(92,170,255,1);
+  text-decoration: none;
+}
+.hyper-link:visited {
+  color: rgba(92,170,255,.8);
+  text-decoration: none;
+}
+.hyper-link:hover {
+  color: rgba(49,116,176,1);
+  text-decoration: underline;
 }
