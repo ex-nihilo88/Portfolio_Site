@@ -11,8 +11,18 @@ Food For You Yellow: #EDB939; rgba(237,185,57,1)
 Buyit Blue: #3174B0; rgba(49,116,176,1)
 */
 
+
+/*
 ul {
   list-style: none;
+}*/
+
+main {
+  padding-top: 149px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -58,8 +68,8 @@ img {
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 0px; /* corner roundness */
-  border: 3px solid rgba(15,15,15,1); /* width of the border, type, color */
+  border-radius: 5px; /* corner roundness */
+  border: 2px solid rgba(15,15,15,1); /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
@@ -68,7 +78,8 @@ img {
   color: rgba(15,15,15,1);
   font-weight: 400;
   text-decoration: none;
-  border: 3px solid rgba(15,15,15,1);
+  border: 2px solid rgba(15,15,15,1);
+  border-radius: 5px;
 }
 .button:active {
   display: inline-block;
@@ -76,19 +87,22 @@ img {
   color: rgba(15,15,15,1);
   font-weight: 400;
   text-decoration: none;
-  border: 3px solid rgba(15,15,15,1);
+  border: 2px solid rgba(15,15,15,1);
+  border-radius: 5px;
 }
 
 .button-contact {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: rgba(15,15,15,1);
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 0px; /* corner roundness */
-  border: 3px solid rgba(15,15,15,1); /* width of the border, type, color */
+  border: 2px solid rgba(15,15,15,1); /* width of the border, type, color */
   transition: 0.2s opacity;
+  border-radius: 5px;
+  margin: 20px;
 }
 .button-contact:hover {
   display: inline-block;
@@ -96,7 +110,8 @@ img {
   color: rgba(15,15,15,1);
   font-weight: 400;
   text-decoration: none;
-  border: 3px solid rgba(15,15,15,1);
+  border: 2px solid rgba(15,15,15,1);
+  margin: 20px;
 }
 .button-contact:active {
   display: inline-block;
@@ -105,6 +120,7 @@ img {
   font-weight: 400;
   text-decoration: none;
   border: 3px solid rgba(15,15,15,1);
+  margin: 20px;
 }
 
 /* social button style */
@@ -112,12 +128,17 @@ img {
   width: 50px;
   height: 50px;
   object-fit: scale-down;
+  margin: 10px 20px;
+
+}
+.social-link {
+  text-decoration: none;
 }
 
 /* logo style */
 .my-logo {
   max-height: 125px;
-  max-width: 350px;
+  max-width: 250px;
   object-fit: scale-down;
 }
 
@@ -143,20 +164,92 @@ img {
 }
 
 /* navigation header styling */
-.nav-header {
-  background-color: rgba(244,244,244,1);
+/*
+#nav-header {
+    background-color: rgba(244,244,244,1);
+    width: 100%;
 }
 
-.menu-link {
+#nav-header .logo-column {
+  text-align: left;
+}
+
+#nav-header .menu-column {
+  text-align: right;
+}*/
+
+header {
+  background-color: rgba(244,244,244,1);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
+  -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.36);
+  box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.36);
+}
+
+nav {
+  display: inline-block;
+  width: 100%
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
   color: rgba(15,15,15,1);
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.menu-link:hover {
+nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
 /* footer styling */
-.contact-footer {
-  background-color: rgba(244,244,244,1)
+#contact-footer {
+  background-color: rgba(244,244,244,1);
+  text-align: center;
+  padding: 20px;
+}
+
+/* layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row {
+  padding-bottom: 25px; border-bottom: 1px solid rgba(15,15,15,.5);
+}
+
+/* intro syling */
+
+#intro {
+  background-color: rgba(15,15,15,1);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#intro h1 {
+  text-align: center;
+  color: rgba(255,255,255,1)
+}
+
+#intro p {
+  color: rgba(255,255,255,1);
 }
