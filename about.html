@@ -41,66 +41,59 @@
 
   <!-- intro section -->
 <main>
-  <div>   <!--header block-->
-    <div class="container"> <!--header container-->
 
-    <h1>About Me</h1>
-
-    </div><!--header container end-->
-  </div><!--header block end-->
 
   <div>   <!--whole section block-->
     <div class="container"> <!--section container-->
+      <div class="col-lg-7">
 
-      <picture>
-        <source srcset="img/Misc/my_portrait@0.5x.png" media="(max-width:767px)">
-        <img class="portrait" src="img/Misc/my_portrait@1x.png" alt="Picture of Author">
-      </picture>
+        <picture>
+          <source srcset="img/Misc/my_portrait@0.5x.png" media="(max-width:767px)">
+          <img class="portrait" src="img/Misc/my_portrait@1x.png" alt="Picture of Author">
+        </picture>
+
+      </div>
 
       <div><!--column container-->
 
-        <div><!--My Story column-->
-          <h2>My Story</h2>
+        <div id="my-story" class="col-lg-5"><!--My Story column-->
+          <h2>About Me</h2>
           <p>I grew up in Winnipeg, did a quick stint in Calgary for high school, and then moved to Vancouver right after graduation where I’ve continued to live for about 15 years now. </p>
           <p>I love to draw and play video games in my spare time. Put me in front of Super Smash Bros and I’ll be pretty much good to go for the next few hours. My passion for both games and art lead me to study Video Game Art and Design in college. During that time I studied multiple disciplines that eventually made me consider UX/UI design as a career path.</p>
           <p>I think having education in both video game and UI/UX design is certainly useful in todays landscape. Not only are video games performing better than ever and will always need a good UI, gamification within products is becoming more common as designers look to retain a customers or build user habits so it’s great to see the two worlds come together.</p>
-          <a class="button" href="Files/Dan_Britton_Resume_2020.pdf" target="_blank">Download CV
-          </a>
+          <a class="button" href="Files/Dan_Britton_Resume_2020.pdf" target="_blank">Download CV</a>
         </div><!--My Story column end-->
 
-        <div><!--Skills and Tools column-->
+        <div id="my-skills" class="col-lg-12"><!--Skills and Tools column-->
           <h2>Skills and Tools</h2>
+          <div id="skill-list">
 
-            <div><!--VD sub-column-->
+            <div class="col-md-6 col-lg-3"><!--VD sub-column-->
               <h3>VISUAL DESIGN</h3>
-              <ul>
-              <li>Art Direction</li>
-              <li>Illustration</li>
-              <li>System Design</li>
-              <li>Branding</li>
-              </ul>
+              <p>Art Direction</p>
+              <p>Illustration</p>
+              <p>System Design</p>
+              <p>Branding</p>
+              <p>Basic HTML, CSS, and Java</p>
             </div><!--VD sub-column end-->
 
-            <div><!--UX sub-column-->
+            <div class="col-md-6 col-lg-3"><!--UX sub-column-->
               <h3>UX DESIGN</h3>
-              <ul>
-              <li>Wireframing</li>
-              <li>Prototyping</li>
-              <li>User Flows</li>
-              <li>User Testing</li>
-              </ul>
+              <p>Wireframing</p>
+              <p>Prototyping</p>
+              <p>User Flows</p>
+              <p>User Testing</p>
             </div><!--UX sub-column end-->
 
-            <div><!--Software sub-column-->
+            <div class="col-md-6 col-lg-3"><!--Software sub-column-->
               <h3>SOFTWARE</h3>
-              <ul>
-              <li>Wireframing</li>
-              <li>Prototyping</li>
-              <li>User Flows</li>
-              <li>User Testing</li>
-              </ul>
+              <p>Sketch</p>
+              <p>Photoshop</p>
+              <p>Affinity Design</p>
+              <p>Affinity Photo</p>
             </div><!--Software sub-column end-->
 
+          </div>
         </div><!--Skills and Tools column end-->
       </div><!--column container end-->
     </div><!--section container end-->
@@ -109,7 +102,7 @@
 </main>
 
 <!-- footer -->
-<footer id="contact-footer">
+<footer id="contact-footer" class="col-md-12">
   <div class="container"><!-- container -->
     <h2>Get in Touch!</h2><!-- title -->
     <p>You can reach me on Skype at <a href="skype:dummy.name.dan" class="hyper-link" id="hyper-link"> Dummy.Name.Dan</a>, via email or on one of my social platforms.</p>

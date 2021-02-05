@@ -17,8 +17,30 @@ ul {
   list-style: none;
 }*/
 
+/* animation */
+
+@keyframes cog-spin {
+  0% {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes cog-spin-r {
+  0% { transform: rotate(0deg);}
+  100% {transform-origin: center; transform: rotateZ(360deg);}
+}
+
+.small-cog {
+  animation: 15s cog-spin infinite alternate linear;
+}
+
+.big-cog {
+  animation: 15s cog-spin-r infinite alternate linear;
+}
+
+/* animation end */
+
 main {
-  padding-top: 149px;
+  padding-top: 141px;
 }
 
 * {
@@ -60,17 +82,20 @@ img {
   width: 100%;
 }
 
+
 /* button styles */
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: rgba(15,15,15,1);
-  color: #ffffff; /* needed to override the default link color */
+  color: rgba(255,255,255,1);
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 5px; /* corner roundness */
-  border: 2px solid rgba(15,15,15,1); /* width of the border, type, color */
-  transition: 0.2s opacity;
+  border-radius: 5px;
+  border: 2px solid rgba(15,15,15,1);
+  transition: .2s background-color;
+  transition: .2s color;
 }
 .button:hover {
   display: inline-block;
@@ -103,6 +128,8 @@ img {
   transition: 0.2s opacity;
   border-radius: 5px;
   margin: 20px;
+  transition-duration: 0.1s;
+  transition-property: background-color;
 }
 .button-contact:hover {
   display: inline-block;
@@ -128,7 +155,7 @@ img {
   width: 50px;
   height: 50px;
   object-fit: scale-down;
-  margin: 10px 20px;
+  margin: 10px 15px;
 
 }
 .social-link {
@@ -136,17 +163,15 @@ img {
 }
 
 /* logo style */
-.my-logo {
-  max-height: 125px;
-  max-width: 250px;
-  object-fit: scale-down;
-}
 
-/* portrait style*/
-.portrait {
-  max-width: 326px;
-  max-height: 326px;
-  object-fit: scale-down;
+/* 57/219p=26% */
+
+.my-logo {
+  min-height: 10%;
+  min-width: 10%;
+  max-height: 20%;
+  max-width: 20%;
+  object-fit: contain;
 }
 
 /* hyper link style*/
@@ -163,20 +188,10 @@ img {
   text-decoration: underline;
 }
 
-/* navigation header styling */
-/*
-#nav-header {
-    background-color: rgba(244,244,244,1);
-    width: 100%;
+.portrait {
+  padding-top: 26px;
 }
 
-#nav-header .logo-column {
-  text-align: left;
-}
-
-#nav-header .menu-column {
-  text-align: right;
-}*/
 
 header {
   background-color: rgba(244,244,244,1);
@@ -215,21 +230,34 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
+#my-skills p {
+  line-height: .8;
+  text-align: left;
+}
+
 /* footer styling */
 #contact-footer {
   background-color: rgba(244,244,244,1);
   text-align: center;
   padding: 20px;
+  margin-top: 60px;
 }
+
 
 /* layout styling */
 
 .container {
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #projects .row {
@@ -251,5 +279,213 @@ nav > ul > li > a:hover {
 }
 
 #intro p {
-  color: rgba(255,255,255,1);
+  color: rgba(255,255,255,.8);
+}
+
+/* about styling */
+#my-story h2 {
+  line-height: 0.3;
+}
+
+#my-story .button {
+  margin-top: 18px
+}
+
+#skill-list h3 {
+  line-height: 0.3;
+  padding-top: 18px;
+}
+
+/* project study style */
+
+.project-title h1 {
+  font-size: 31px;
+}
+
+.role h3 {
+  font-size: 24px;
+  line-height: .5;
+  padding-top: 20px;
+}
+.role p {
+  line-height: 0.8;
+}
+
+.problem h3 {
+  font-size: 24px;
+  line-height: .5;
+  padding-top: 20px;
+}
+.problem span {
+  font-weight: bold;
+}
+.objective h3 {
+  font-size: 24px;
+  line-height: .5;
+  padding-top: 20px;
+}
+
+.project-stats h4 {
+  font-size: 18px;
+  line-height: 1;
+}
+.project_stats p {
+  line-height: .8;
+}
+
+.project-section h3 {
+  font-size: 24px;
+  line-height: .5;
+  padding-top: 20px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+  .col-md-12 {
+    width: 100%
+  }
+  .col-md-9 {
+    width: 66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width:33%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  header {
+    text-align: unset;
+  }
+  nav{
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  my-logo {
+    width: 126%;
+    object-fit: contain;
+  }
+  main {
+    padding-top: 84px;
+  }
+
+  #intro span {
+    display: block;
+  }
+
+  #my-story .button {
+    margin: 40px 0;
+  }
+  #my-story h2 {
+    line-height: 0;
+    padding-top: 10px;
+  }
+
+  #my-skills h3 {
+    line-height: .5;
+    font-size: 24px;
+  }
+  #my-skills h2 {
+    line-height: 0;
+  }
+  #contact-footer {
+    margin-top: 120px;
+  }
+
+  .project-stats h4 {
+    line-height: 0;
+    padding-bottom: 10;
+  }
+
+  .role h3 {
+    text-align: right;
+    padding-top: 0;
+  }
+  .role p {
+    text-align: right;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-3 {
+    width: 33%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-5 {
+    width: 42%;
+  }
+  .col-lg-7 {
+    width: 58%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  header {
+    text-align: unset;
+  }
+  nav{
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  my-logo {
+    height: 50%;
+    width: 126%;
+  }
+
+  main {
+    padding-top: 89px;
+  }
+
+  }
+  #intro span {
+    display: block;
+  }
+
+  #my-story .button {
+    margin: 20px 0;
+  }
+  #my-story h2 {
+    line-height: 0;
+  }
+
+  #my-skills h3 {
+    line-height: .5;
+    font-size: 21px;
+  }
+  #my-skills h2 {
+    line-height: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  #skill-list {
+
+  }
+  #contact-footer {
+    margin-top: 120px;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
