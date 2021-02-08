@@ -189,7 +189,9 @@ img {
 }
 
 .portrait {
+  max-height: 582px;
   padding-top: 26px;
+  object-fit: cover;
 }
 
 
@@ -295,6 +297,7 @@ nav > ul > li > a:hover {
   line-height: 0.3;
   padding-top: 18px;
 }
+
 
 /* project study style */
 
