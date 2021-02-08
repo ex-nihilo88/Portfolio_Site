@@ -401,7 +401,7 @@ Medium devices (640px and larger)
 
   .project-stats h4 {
     line-height: 0;
-    padding-bottom: 10;
+    padding-bottom: 10px;
   }
 
   .role h3 {
@@ -455,7 +455,6 @@ Large devices (1024px or larger)
     padding-top: 89px;
   }
 
-  }
   #intro span {
     display: block;
   }
