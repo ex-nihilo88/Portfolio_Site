@@ -1,12 +1,9 @@
-console.log("hello world")
+function menuToggle() {
+  var x = document.getElementById ('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
 
-
-var age = 33;
-var name = "Dan";
-
-
-console.log(age, name)
-
-for (var i = 1; i <= 100; i++) {
-  console.log(i);
 }

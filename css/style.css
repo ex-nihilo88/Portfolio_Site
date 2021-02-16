@@ -40,7 +40,7 @@ ul {
 /* animation end */
 
 main {
-  padding-top: 141px;
+  padding-top: 56px;
 }
 
 * {
@@ -164,15 +164,12 @@ img {
 
 /* logo style */
 
-/* 57/219p=26% */
-
 .my-logo {
-  min-height: 10%;
-  min-width: 10%;
-  max-height: 20%;
-  max-width: 20%;
+  height: 35px;
+  width: auto;
   object-fit: contain;
 }
+
 
 /* hyper link style*/
 .hyper-link {
@@ -198,26 +195,48 @@ img {
 header {
   background-color: rgba(244,244,244,1);
   width: 100%;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
   -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.36);
   box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.36);
 }
 
-nav {
-  display: inline-block;
-  width: 100%
-}
 
 nav > ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0px;
+}
+
+.navtoggle.responsive nav {
+padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+display: block;
+padding: 10px 0;
+border-top: 1px solid rgba(15,15,15,0.2);
+}
+
+.navtoggle.responsive li:last-child  {
+padding: 0 0 10px;
 }
 
 nav > ul > li > a {
@@ -371,12 +390,33 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-  my-logo {
-    width: 126%;
-    object-fit: contain;
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+  nav > ul > li {
+    display: inline-block;
   }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
+}
+
+
+
+.my-logo {
+  height: 54px;
+  width: auto;
+  padding-top: 0;
+  object-fit: contain;
+}
+
   main {
-    padding-top: 84px;
+    padding-top: 75px;
   }
 
   #intro span {
@@ -449,14 +489,7 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
-  my-logo {
-    height: 50%;
-    width: 126%;
-  }
 
-  main {
-    padding-top: 89px;
-  }
 
   #intro span {
     display: block;
