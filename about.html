@@ -6,7 +6,7 @@
   <meta name="author" content="Dan Britton">
   <meta name="description" content="UI UX Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dan Britton - UI/UX Designer - About</title>
+  <title>Dan Britton - UI/UX Designer</title>
 
   <link rel="icon" href="favicon.ico" sizes="32x32" />
 
@@ -18,13 +18,16 @@
 
 </head>
 
+
 <body>
   <!-- header -->
   <header id="nav-header">
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+
 
       <picture>
-        <source srcset="img/misc/my_logo@0.5x.png" class="my-logo" media="(max-width:767px)">
+        <source srcset="img/misc/my_logo@0.5x.png" class="my-logo" media="(max-width:640px)">
         <img src="img/misc/my_logo.png" class="my-logo" alt="Logo">
       </picture>
 
@@ -33,10 +36,11 @@
         <ul>
           <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact-footer">Contact</a></li>
+          <li><a href="#contact-footer" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-
+      </div>
     </div>
   </header>
 
