@@ -251,10 +251,6 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
-#my-skills p {
-  line-height: .8;
-  text-align: left;
-}
 
 /* footer styling */
 #contact-footer {
@@ -314,9 +310,39 @@ nav > ul > li > a:hover {
 
 #skill-list h3 {
   line-height: 0.3;
-  padding-top: 18px;
+  padding-top: 25px;
+  padding-left: 10px;
 }
 
+#my-skills p {
+  line-height: .8;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.skills-card-l {
+  color: rgba(15,15,15,1);
+  margin-right: 0px;
+  background-color: rgba(244,244,244,1);
+  height: 200px;
+  border-radius: 10px;
+
+}
+.skills-card-m {
+  color: rgba(15,15,15,1);
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: rgba(244,244,244,1);
+  height: 180px;
+  border-radius: 10px;
+}
+.skills-card-r {
+  color: rgba(15,15,15,1);
+  margin-right: 0px;
+  background-color: rgba(244,244,244,1);
+  height: 180px;
+  border-radius: 10px;
+}
 
 /* project study style */
 
@@ -393,7 +419,7 @@ Medium devices (640px and larger)
 
   nav > ul {
   margin: 1em 0;
-}
+  }
 
   nav > ul > li {
     display: inline-block;
@@ -404,11 +430,11 @@ Medium devices (640px and larger)
   }
   .navtoggle li:last-child {
   display: none;
-}
+  }
 
 
 
-.my-logo {
+  .my-logo {
   height: 54px;
   width: auto;
   padding-top: 0;
@@ -427,17 +453,41 @@ Medium devices (640px and larger)
     margin: 40px 0;
   }
   #my-story h2 {
-    line-height: 0;
     padding-top: 10px;
   }
 
   #my-skills h3 {
-    line-height: .5;
-    font-size: 24px;
+    font-size: 20px;
+    padding-top: 5px;
   }
-  #my-skills h2 {
-    line-height: 0;
+  #my-skills .two-line-item {
+    line-height: 1.2;
   }
+
+  .skills-card-l {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 210px;
+    width: 200px;
+    border-radius: 10px;
+
+  }
+  .skills-card-m {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    height: 210px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  .skills-card-r {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 210px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
   #contact-footer {
     margin-top: 120px;
   }
@@ -454,7 +504,7 @@ Medium devices (640px and larger)
   .role p {
     text-align: right;
   }
-}
+  }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -503,17 +553,42 @@ Large devices (1024px or larger)
   }
 
   #my-skills h3 {
-    line-height: .5;
+    line-height: 0;
     font-size: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #my-skills h2 {
     line-height: 0;
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  #skill-list {
+
+  .skills-list {
+    padding-top: 40px;
+  }
+
+  .skills-card-l {
+    margin-right: 20px;
+    height: 210px;
+    width: 300px;
+    border-radius: 20px;
 
   }
+  .skills-card-m {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 210px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .skills-card-r {
+    margin-left: 20px;
+    height: 210px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
   #contact-footer {
     margin-top: 120px;
   }
