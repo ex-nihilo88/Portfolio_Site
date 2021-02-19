@@ -309,8 +309,8 @@ nav > ul > li > a:hover {
 }
 
 #skill-list h3 {
-  line-height: 0.3;
-  padding-top: 25px;
+  font-size: 20px;
+  padding-top: 10px;
   padding-left: 10px;
 }
 
@@ -320,11 +320,21 @@ nav > ul > li > a:hover {
   padding-left: 10px;
 }
 
+/*  centering code WIP
+#my-skills {
+  padding-left: 14%;
+  padding-right: 14%;
+}
+*/
+
+
+
 .skills-card-l {
   color: rgba(15,15,15,1);
   margin-right: 0px;
   background-color: rgba(244,244,244,1);
   height: 200px;
+  width: 220px;
   border-radius: 10px;
 
 }
@@ -333,14 +343,16 @@ nav > ul > li > a:hover {
   margin-left: 0px;
   margin-right: 0px;
   background-color: rgba(244,244,244,1);
-  height: 180px;
+  height: 200px;
+  width: 220px;
   border-radius: 10px;
 }
 .skills-card-r {
   color: rgba(15,15,15,1);
   margin-right: 0px;
   background-color: rgba(244,244,244,1);
-  height: 180px;
+  height: 200px;
+  width: 220px;
   border-radius: 10px;
 }
 
@@ -458,7 +470,7 @@ Medium devices (640px and larger)
 
   #my-skills h3 {
     font-size: 20px;
-    padding-top: 5px;
+    margin-top: 0px;
   }
   #my-skills .two-line-item {
     line-height: 1.2;
@@ -467,23 +479,23 @@ Medium devices (640px and larger)
   .skills-card-l {
     margin-right: 20px;
     margin-bottom: 20px;
-    height: 210px;
+    height: 220px;
     width: 200px;
     border-radius: 10px;
 
   }
   .skills-card-m {
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 20px;
     margin-bottom: 20px;
-    height: 210px;
+    height: 220px;
     width: 200px;
     border-radius: 10px;
   }
   .skills-card-r {
-    margin-left: 20px;
+    margin-left: 0px;
     margin-bottom: 20px;
-    height: 210px;
+    height: 220px;
     width: 200px;
     border-radius: 10px;
   }
@@ -552,14 +564,14 @@ Large devices (1024px or larger)
     line-height: 0;
   }
 
+
+
   #my-skills h3 {
-    line-height: 0;
     font-size: 21px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
   #my-skills h2 {
-    line-height: 0;
     padding-top: 20px;
     padding-bottom: 10px;
   }
@@ -571,21 +583,22 @@ Large devices (1024px or larger)
   .skills-card-l {
     margin-right: 20px;
     height: 210px;
-    width: 300px;
+    width: 250px;
     border-radius: 20px;
 
   }
   .skills-card-m {
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
     height: 210px;
-    width: 300px;
+    width: 250px;
     border-radius: 20px;
+
   }
   .skills-card-r {
-    margin-left: 20px;
+    margin-left: 0px;
     height: 210px;
-    width: 300px;
+    width: 250px;
     border-radius: 20px;
   }
 
