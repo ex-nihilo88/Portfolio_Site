@@ -85,6 +85,11 @@ img {
 
 /* button styles */
 
+#cv-button {
+  margin: 40px auto;
+  text-align: center;
+}
+
 .button {
   display: inline-block;
   background-color: rgba(15,15,15,1);
@@ -185,12 +190,6 @@ img {
   text-decoration: underline;
 }
 
-.portrait {
-  max-height: 582px;
-  padding-top: 26px;
-  object-fit: cover;
-}
-
 
 header {
   background-color: rgba(244,244,244,1);
@@ -200,6 +199,7 @@ header {
   -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
   -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.36);
   box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.36);
+  z-index: 1;
 }
 
 
@@ -267,6 +267,12 @@ nav > ul > li > a:hover {
   padding: 0 10px;
 }
 
+.container.gry {
+  background-color: rgba(244,244,244,1);
+  display: table;
+}
+
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
@@ -300,24 +306,37 @@ nav > ul > li > a:hover {
 }
 
 /* about styling */
-#my-story h2 {
-  line-height: 0.3;
-}
-
-#my-story .button {
-  margin-top: 18px
-}
-
-#skill-list h3 {
-  font-size: 20px;
-  padding-top: 10px;
+.my-story h2 {
+  color: rgba(255,255,255,1);
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 8px;
   padding-left: 10px;
 }
 
-#my-skills p {
-  line-height: .8;
-  text-align: left;
-  padding-left: 10px;
+.my-story p {
+  color: rgba(255,255,255,1);
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 0 10px;
+  padding-bottom: 15px;
+}
+
+
+
+#about-me-intro {
+  padding-top: 15px;
+}
+
+.about-me-header {
+  background: rgb(139,165,186);
+  background: linear-gradient(45deg, rgba(139,165,186,1) 31%, rgba(83,108,132,1) 69%);
+  border-radius: 10px;
+}
+.portrait {
+  height: 297px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 /*  centering code WIP
@@ -327,76 +346,160 @@ nav > ul > li > a:hover {
 }
 */
 
-
-
-.skills-card-l {
-  color: rgba(15,15,15,1);
-  margin-right: 0px;
-  background-color: rgba(244,244,244,1);
-  height: 200px;
-  width: 220px;
-  border-radius: 10px;
-
+#my-skills {
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.skills-card-m {
+
+.card-skills {
   color: rgba(15,15,15,1);
-  margin-left: 0px;
-  margin-right: 0px;
   background-color: rgba(244,244,244,1);
-  height: 200px;
-  width: 220px;
+  width: 100%;
   border-radius: 10px;
 }
-.skills-card-r {
-  color: rgba(15,15,15,1);
-  margin-right: 0px;
-  background-color: rgba(244,244,244,1);
-  height: 200px;
-  width: 220px;
-  border-radius: 10px;
+.card-skills h3 {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-skills p {
+  line-height: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 /* project study style */
 
-.project-title h1 {
-  font-size: 31px;
+#project-intro {
+  padding-top: 15px;
 }
 
-.role h3 {
-  font-size: 24px;
-  line-height: .5;
-  padding-top: 20px;
-}
-.role p {
-  line-height: 0.8;
-}
-
-.problem h3 {
-  font-size: 24px;
-  line-height: .5;
-  padding-top: 20px;
-}
-.problem span {
-  font-weight: bold;
-}
-.objective h3 {
-  font-size: 24px;
-  line-height: .5;
-  padding-top: 20px;
+.project-stats h1 {
+  color: rgba(255,255,255,1);
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding-left: 10px;
 }
 
 .project-stats h4 {
-  font-size: 18px;
-  line-height: 1;
+  color: rgba(255,255,255,1);
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 30px;
 }
-.project_stats p {
-  line-height: .8;
+.project-stats p {
+  color: rgba(255,255,255,1);
+  font-size: 14;
+  font-weight: bolder;
+  padding: 0 10px;
+  padding-bottom: 15px;
+}
+
+.project-header {
+  background: rgb(213,83,38);
+  background: linear-gradient(45deg, rgba(213,83,38,1) 31%, rgba(128,49,20,1) 69%);
+  /*
+  background: rgb(213,83,38);
+  background: linear-gradient(45deg, rgba(213,83,38,1) 64%, rgba(128,49,20,1) 100%);  */
+
+
+  border-radius: 10px;
+}
+
+.project-header-img {
+  height: 297px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .project-section h3 {
   font-size: 24px;
-  line-height: .5;
   padding-top: 20px;
+}
+
+.problem {
+  background-color: rgba(244,244,244,1);
+  border-radius: 10px;
+
+}
+
+.objective {
+  background-color: rgba(244,244,244,1);
+  border-radius: 10px;
+
+}
+
+.role {
+  background-color: rgba(244,244,244,1);
+  border-radius: 10px;
+
+}
+
+.problem h3 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.problem span {
+  font-weight: bold;
+}
+
+.problem p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.objective h3 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.objective p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.role h3 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.role p {
+  line-height: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.project-section {
+  margin-top: 15px;
+  margin-bottom: 15px;;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.takeaway-banner {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(15,15,15,1);
+  color: rgba(255,255,255,1);
+  text-align: center;
+  font-weight: bold;
+  font-size: 24;
 }
 
 /* ==============================
@@ -404,8 +507,9 @@ Medium devices (640px and larger)
 ================================= */
 
 @media only screen and (min-width: 640px) {
+
   .col-md-12 {
-    width: 100%
+    width: 100%;
   }
   .col-md-9 {
     width: 66%;
@@ -413,20 +517,64 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-  .col-md-3 {
-    width:33%;
+
+  .card-md-6l {
+    width: 48%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
   }
+  .card-md-6r {
+    width: 48%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+
+  .card-skills-md-5l {
+    width: 48%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 0;
+    margin-bottom: 2%;
+  }
+  .card-skills-md-5r {
+    width: 48%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+  .card-skills-md-5l h3,
+  .card-skills-md-5r h3 {
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card-skills-md-5l p,
+  .card-skills-md-5r p {
+    line-height: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 0 10px;
   }
+  [class*="card-"] {
+    float: left;
+  }
+
   header {
     text-align: unset;
   }
   nav{
     width: auto;
     float: right;
-    margin-top: 4px;
   }
 
   nav > ul {
@@ -441,10 +589,12 @@ Medium devices (640px and larger)
     display: inline-block;
   }
   .navtoggle li:last-child {
-  display: none;
+    display: none;
   }
 
-
+  main {
+    padding-top: 75px;
+  }
 
   .my-logo {
   height: 54px;
@@ -453,70 +603,124 @@ Medium devices (640px and larger)
   object-fit: contain;
 }
 
-  main {
-    padding-top: 75px;
+  #project-intro {
+    margin-top: 15px;
   }
+  #about-me-intro {
+    margin-top: 15px;
+  }
+
+  .project-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+  }
+
+  .project-img-sqr {
+    margin: 40px 0;
+    width: 300px;
+    float: right;
+  }
+
+  .project-header {
+    background: rgb(213,83,38);
+    background: linear-gradient(45deg, rgba(213,83,38,1) 64%, rgba(128,49,20,1) 100%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 367px;
+    margin-bottom: 15px;
+  }
+
+  .project-stats {
+    padding-top: 15px;
+  }
+
+  .img-align {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .project-header-img {
+    height: 367px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+
+  .problem h3 {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+
+  .problem span {
+    font-weight: bold;
+  }
+  .objective h3 {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+
+  .objective p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .role h3 {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .role p {
+    line-height: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .takeaway-banner {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .takeaway-banner p {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .project-text.fixed {
+    position: -webkit- sticky;
+    position: sticky;
+    top: 75px;
+  }
+
 
   #intro span {
     display: block;
   }
 
-  #my-story .button {
-    margin: 40px 0;
+  .about-me-header {
+    background: rgb(139,165,186);
+    background: linear-gradient(45deg, rgba(139,165,186,1) 64%, rgba(83,108,132,1) 100%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 395px;
+    margin-bottom: 15px;
   }
-  #my-story h2 {
-    padding-top: 10px;
+  .portrait {
+    height: 395px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
   }
 
-  #my-skills h3 {
-    font-size: 20px;
-    margin-top: 0px;
-  }
-  #my-skills .two-line-item {
-    line-height: 1.2;
-  }
-
-  .skills-card-l {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    height: 220px;
-    width: 200px;
-    border-radius: 10px;
-
-  }
-  .skills-card-m {
-    margin-left: 0px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    height: 220px;
-    width: 200px;
-    border-radius: 10px;
-  }
-  .skills-card-r {
-    margin-left: 0px;
-    margin-bottom: 20px;
-    height: 220px;
-    width: 200px;
-    border-radius: 10px;
+  .my-story {
+    padding-top: 15px;
   }
 
   #contact-footer {
     margin-top: 120px;
   }
-
-  .project-stats h4 {
-    line-height: 0;
-    padding-bottom: 10px;
-  }
-
-  .role h3 {
-    text-align: right;
-    padding-top: 0;
-  }
-  .role p {
-    text-align: right;
-  }
-  }
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -526,18 +730,89 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-  .col-lg-3 {
-    width: 33%;
+  .container-gry {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-lg-3l {
+    width: 31%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 20px;
+    padding: 0 20px;
+    height: 366px;
+  }
+  .card-lg-3m {
+    width: 31%;
+    margin-top: 2%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    padding: 0 20px;
+    height: 366px;
+  }
+  .card-lg-3r {
+    width: 31%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 20px;
+    float: right;
+    padding: 0 22px;
+    height: 366px;
+  }
+  .card-skills-lg-3l {
+    width: 21%;
+    margin-right: 5.3%;
+    margin-left: 0%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    float: left;
+  }
+  .card-skills-lg-3r {
+    width: 21%;
+    margin-left: 0;
+    margin-right: 0%;
+    border-radius: 20px;
+    float: right;
+  }
+  .card-skills-lg-3l h3,
+  .card-skills-lg-3r h3 {
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card-skills-lg-5l p,
+  .card-skills-lg-5r p {
+    line-height: 2;
+    font-size: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
   }
   .col-lg-12 {
     width: 100%;
   }
   .col-lg-5 {
-    width: 42%;
+    width: 33%;
   }
   .col-lg-7 {
-    width: 58%;
+    width: 66%;
   }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 0 10px;
@@ -552,63 +827,140 @@ Large devices (1024px or larger)
   }
 
 
-
   #intro span {
     display: block;
   }
 
-  #my-story .button {
-    margin: 20px 0;
-  }
-  #my-story h2 {
-    line-height: 0;
-  }
 
-
-
-  #my-skills h3 {
-    font-size: 21px;
-    padding-top: 10px;
-    padding-bottom: 0px;
-  }
-  #my-skills h2 {
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-
-  .skills-list {
-    padding-top: 40px;
-  }
-
-  .skills-card-l {
-    margin-right: 20px;
-    height: 210px;
-    width: 250px;
-    border-radius: 20px;
-
-  }
-  .skills-card-m {
-    margin-left: 20px;
-    margin-right: 40px;
-    height: 210px;
-    width: 250px;
-    border-radius: 20px;
-
-  }
-  .skills-card-r {
-    margin-left: 0px;
-    height: 210px;
-    width: 250px;
-    border-radius: 20px;
-  }
 
   #contact-footer {
     margin-top: 120px;
   }
+  .about-me-header {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 529px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+  }
+  .portrait {
+    height: 529px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .my-story h2 {
+    padding-top: 15px;
+    font-size: 40px;
+  }
+  .my-story p {
+    padding-top: 0px;
+    font-size: 16px;
+  }
+
+  .project-header {
+    height: 490px;
+    border-radius: 20px;
+  }
+
+  .img-align {
+    padding-left: 0;
+  }
+
+  .project-header-img {
+    height: 490px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .project-stats {
+    padding-top: 25px;
+  }
+  .project-stats h1 {
+    font-size: 40px;
+  }
+
+  .project-stats h4 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .project-stats p {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+  .problem h3 {
+    font-size: 26px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .objective h3 {
+    font-size: 26px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .role h3 {
+    font-size: 26px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .problem p {
+    font-size: 21px;
+    padding-left: 0px;
+    margin-top: 21px;
+  }
+  .objective p {
+    font-size: 21px;
+    padding-left: 0px;
+    margin-top: 21px;
+  }
+  .role p {
+    font-size: 21px;
+    padding-left: 0px;
+    margin-top: 21px;
+  }
+  .project-text h3 {
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  .project-text p {
+    font-size: 21px;
+    margin-top: 21px;
+  }
+  .project-img-sqr {
+    width: 636px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
+    object-fit: fill;
+  }
+  .project-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+  .takeaway-banner {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
+
+
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
+  .my-story p {
+    padding-top: 0px;
+    font-size: 18px;
+  }
+
 }

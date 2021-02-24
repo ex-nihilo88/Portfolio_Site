@@ -6,7 +6,7 @@
   <meta name="author" content="Dan Britton">
   <meta name="description" content="UI UX Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dan Britton - UI/UX Designer</title>
+  <title>Dan Britton - Visual/UX Designer</title>
 
   <link rel="icon" href="favicon.ico" sizes="32x32" />
 
@@ -24,12 +24,12 @@
   <header id="nav-header">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-
-        <a href="index.html"</a>
+        <a href="index.html">
         <picture>
           <source srcset="img/misc/my_logo@0.5x.png" class="my-logo" media="(max-width:640px)">
           <img src="img/misc/my_logo.png" class="my-logo" alt="Logo">
         </picture>
+        </a>
 
 
       <nav>
@@ -49,61 +49,53 @@
 
 
   <div>   <!--whole section block-->
-    <div class="container"> <!--section container-->
-      <div class="col-lg-7">
+    <div class="container" id="about-me-intro"> <!--section container-->
+      <div class="about-me-header">
+        <div class="img-align col-md-6 col-lg-7">
 
-        <picture>
-          <source srcset="img/Misc/my_portrait@0.5x.png" media="(max-width:767px)">
-          <img class="portrait" src="img/Misc/my_portrait@1x.png" alt="Picture of Author">
-        </picture>
+          <picture>
+            <source srcset="img/Misc/my_portrait@0.5x.png" media="(max-width:767px)">
+            <img class="portrait" src="img/Misc/my_portrait@1x.png" alt="Picture of Author">
+          </picture>
 
-      </div>
+        </div>
 
-      <div><!--column container-->
 
-        <div id="my-story" class="col-md-12 col-lg-5"><!--My Story column-->
+        <div class="my-story col-md-6 col-lg-5"><!--My Story column-->
           <h2>About Me</h2>
-          <p>I grew up in Winnipeg, did a quick stint in Calgary for high school, and then moved to Vancouver right after graduation where I’ve continued to live for about 15 years now. </p>
-          <p>I love to draw and play video games in my spare time. Put me in front of Super Smash Bros and I’ll be pretty much good to go for the next few hours. My passion for both games and art lead me to study Video Game Art and Design in college. During that time I studied multiple disciplines that eventually made me consider UX/UI design as a career path.</p>
-          <p>I think having education in both video game and UI/UX design is certainly useful in todays landscape. Not only are video games performing better than ever and will always need a good UI, gamification within products is becoming more common as designers look to retain a customers or build user habits so it’s great to see the two worlds come together.</p>
-          <a class="button" href="Files/Dan_Britton_Resume_2020.pdf" target="_blank">Download CV</a>
+          <p>My name is Dan Britton. I grew up in Winnipeg, did a quick stint in Calgary for high school, and then moved to Vancouver right after graduation where I’ve continued to live for about 15 years now.<br><br> I love to draw and play video games in my spare time. Put me in front of Super Smash Bros. and I’ll be good to go for the next few hours. My passion for games and art lead me to study Video Game Art and Design at the Art Insititute of Vancouver. During that time I studied multiple disciplines that eventually made me consider UX/UI design as a career path.</p>
         </div><!--My Story column end-->
-
+      </div>
         <div id="my-skills" class=" col-md-12 col-lg-12"><!--Skills and Tools column-->
           <div class="skills-list" id="skill-list">
 
-            <div class="skills-card-l col-md-3 col-lg-3"><!--VD sub-column-->
-              <h3>VISUAL DESIGN</h3>
-              <p>Art Direction</p>
-              <p>Illustration</p>
-              <p>System Design</p>
-              <p>Branding</p>
-              <p class="two-line-item">Basic HTML, CSS, and JS</p>
+            <div class="card-skills card-skills-md-5l card-skills-lg-3l"><!--VD sub-column-->
+              <h3>Visual Design</h3>
+              <p>Art Direction<br>Illustration<br>Branding<br>Basic HTML, CSS, and JS</p>
             </div><!--VD sub-column end-->
 
-            <div class="skills-card-m col-md-3 col-lg-3"><!--UX sub-column-->
-              <h3>UX DESIGN</h3>
-              <p>Wireframing</p>
-              <p>Prototyping</p>
-              <p>User Flows</p>
-              <p>User Testing</p>
-              <p> </p>
+            <div class="card-skills card-skills-md-5r card-skills-lg-3l"><!--UX sub-column-->
+              <h3>UX Design</h3>
+              <p>Wireframing<br>Prototyping<br>User Flows<br>User Testing</p>
             </div><!--UX sub-column end-->
 
-            <div class="skills-card-r col-md-3 col-lg-3"><!--Software sub-column-->
-              <h3>SOFTWARE</h3>
-              <p>Sketch</p>
-              <p>Photoshop</p>
-              <p>Affinity Design</p>
-              <p>Affinity Photo</p>
-              <p> </p>
+            <div class="card-skills card-skills-md-5l card-skills-lg-3l"><!--Software sub-column-->
+              <h3>Software</h3>
+              <p>Sketch<br>Photoshop<br>Affinity Design<br>Affinity Photo</p>
             </div><!--Software sub-column end-->
-
+            <div class="card-skills card-skills-md-5r card-skills-lg-3r"><!--Software sub-column-->
+              <h3>Other Skills</h3>
+              <p>Presentation<br>Leadership<br>Detail Oriented<br>Communication</p>
+            </div><!--Software sub-column end-->
           </div>
         </div><!--Skills and Tools column end-->
-      </div><!--column container end-->
+
     </div><!--section container end-->
   </div><!--whole section block end-->
+
+  <div id="cv-button" class="col-md-12 col-lg-12">
+    <a class="button" href="Files/Dan_Britton_Resume_2020.pdf" target="_blank">Download CV</a>
+  </div>
 
 </main>
 

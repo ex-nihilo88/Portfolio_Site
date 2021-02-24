@@ -6,7 +6,7 @@
   <meta name="author" content="Dan Britton">
   <meta name="description" content="UI UX Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dan Britton - UI/UX Designer</title>
+  <title>Dan Britton - Visual/UX Designer</title>
 
   <link rel="icon" href="favicon.ico" sizes="32x32" />
 
@@ -24,13 +24,12 @@
   <header id="nav-header">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-
-        <a href="index.html"</a>
+        <a href="index.html">
         <picture>
           <source srcset="img/misc/my_logo@0.5x.png" class="my-logo" media="(max-width:640px)">
           <img src="img/misc/my_logo.png" class="my-logo" alt="Logo">
         </picture>
-
+        </a>
 
       <nav>
         <ul>
@@ -45,72 +44,53 @@
   </header>
 
   <main>
-    <div>
-      <!--header block-->
-      <div class="container project-title">
-        <!--header container-->
-
-        <h1>Mug Shop</h1>
-
-      </div>
-      <!--header container end-->
-    </div>
-    <!--header block end-->
 
     <div>
       <!--intro block-->
       <div id="project-intro" class="container">
         <!--intro container-->
+        <div class="project-header">
 
-        <div>
+          <div class="img-align col-md-6 col-lg-7">
           <!--header image-->
-          <picture>
-            <source srcset="img/Mug_Shop/Mug_Shop_Header@0.5x.png" media="(max-width:767px)">
-            <img src="img/Mug_Shop/Mug_Shop_Header@1x.png" alt="Mug Shop Mockup">
-          </picture>
-        </div>
+            <picture>
+            <source srcset="img/mug_shop/header_test@0.5x.png" media="(max-width:640px)">
+            <img src="img/mug_shop/header_test.png" class="project-header-img" alt="Mug Shop Mockup">
+            </picture>
+          </div>
         <!--header image end-->
 
-        <div>
-          <!--content columns container-->
 
-          <div class="col-md-9 project-stats">
+          <div class="project-stats col-md-6 col-lg-5">
             <!--intro text column-->
+            <h1>Mug Shop</h1>
             <h4>2020 - STUDENT PROJECT - 4 WEEKS</h4>
-            <p>Mug Shop is a fictional e-commerce mobile application that specializes in coffee and brewing supplies.</p>
-            <p>Like most people who are firing on all caffeinated cylindars, Mug Shop is bold and straight to the point with it’s clear layout and personalized recommendations.</p>
+            <p>Mug Shop is a fictional e-commerce mobile application that specializes in coffee and brewing supplies.<br><br>Like most people who are firing on all caffeinated cylindars, Mug Shop is bold and straight to the point with it’s clear layout and personalized recommendations.</p>
           </div>
+        </div>
           <!--intro text column end-->
 
-          <div class="col-md-3 role">
-            <!--role text column-->
-            <h3>ROLE</h3>
-              <p>UX Design</p>
-              <p>Wireframing</p>
-              <p>Art Director</p>
-              <p>UI Design</p>
-          </div>
-          <!--role text column end-->
-
-          <div class="col-md-6 problem">
+          <div class="problem card-md-6l card-lg-3l">
             <!--problem text column-->
-            <h3>PROBLEM</h3>
-            <p>MugShop needed a mobile application that provided a streamlined buying experience for the user.<span> I needed to create as few screens as possible to get the user from the home screen to the checkout fast.</span></p>
+            <h3>Problem</h3>
+            <p>Mug Shop needed a mobile application that provided a streamlined buying experience for the user.<span> There had to be as few screens as possible between the home and checkout page.</span></p>
           </div>
           <!--problem text column end-->
 
-          <div class="col-md-6 objective">
+          <div class="objective card-md-6r card-lg-3m">
             <!--objectives text column-->
-            <h3>OBJECTIVE</h3>
-            <ul>
-              <li>Design a mobile application for people who want to shop for key items without going into a physical store.</li>
-              <li>Create a company and establish it’s visual brand with a logo, colour pallete, and style guide for the mobile app to adhere to.</li>
-            </ul>
+            <h3>Objective</h3>
+              <p>Design a mobile application for people who want to shop for key items without going into a physical store.<br><br>Establish it’s visual brand with a logo, colour palette, and style guide</p>
           </div>
           <!--objectives text column end-->
 
-        </div>
-        <!--content columns container end-->
+          <div class="role card-md-6l card-lg-3r">
+            <!--role text column-->
+            <h3>Role</h3>
+              <p>UX Design<br>Wireframing<br>Art Director<br>UI Design</p>
+          </div>
+          <!--role text column end-->
+
 
       </div>
       <!--intro container end-->
@@ -122,14 +102,17 @@
       <div class="project-section">
         <!--research container-->
 
-        <picture>
-          <source srcset="img/Mug_Shop/User_Flows_Banner@0.5x.png" media="(max-width:767px)">
-          <img src="img/Mug_Shop/User_Flows_Banner@1x.png" alt="User Flows">
-        </picture>
+        <div class="project-text col-md-6 col-lg-5">
         <h3>Research</h3>
         <p>Project research was provided. The key takeaway was that users wanted a quick and efficient way to shop for items. I decided to focus on flows that lowered the barrier of entry, encouraged buying at the users own pace, and having quick
           access to sales and promotions. </p>
-
+        </div>
+        <div class="col-md-6 col-lg-7">
+        <picture>
+          <source srcset="img/Mug_Shop/User_Flows_Banner@0.5x.png" media="(max-width:767px)">
+          <img src="img/Mug_Shop/User_Flows_Banner@1x.png" class="project-img-sqr" alt="User Flows">
+        </picture>
+        </div>
       </div>
       <!--research container end-->
     </div>
@@ -139,37 +122,51 @@
       <!--idea/wireframe block-->
       <div class="project-section">
         <!--idea/wireframe container-->
-
-        <picture>
-          <source srcset="img/Mug_Shop/Mug_Shop_Sketches@0.5x.png" media="(max-width:767px)">
-          <img src="img/Mug_Shop/Mug_Shop_Sketches@1x.png" alt="Initial Sketches">
-        </picture>
+        <div class="project-text col-md-6 col-lg-5">
         <h3>Ideation and Wireframes</h3>
         <p>After creating the user flows, I started doing some rough sketches of each of the screens I would need. Once I was happy with the basic layout, I created some low fidelity wireframes that could be used in a prototype and tested before
           moving on.  </p>
+        </div>
 
+        <div class="col-md-6 col-lg-7">
+        <picture>
+          <source srcset="img/Mug_Shop/Mug_Shop_Sketches@0.5x.png" media="(max-width:767px)">
+          <img src="img/Mug_Shop/Mug_Shop_Sketches@1x.png" class="project-img-sqr" alt="Initial Sketches">
+        </picture>
+        </div>
       </div>
       <!--user testing/feedback container end-->
     </div>
     <!--user testing/feedback block end-->
 
-    <div class="container">
+    <div class="container gry">
       <!--user testing/feedback block-->
-      <div class="project-section">
         <!--user testing/feedback container-->
+        <div class="project-text col-md-6 col-lg-5">
+          <h3>User Testing and Feedback</h3>
+          <p>I asked a group of users to perform specific tasks in the prototype so I could collect feedback on how they were navigating it. The findings helped inform what the final design would look like.   </p>
+        </div>
+        <div class="col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/Mug_Shop/mug_shop_feedback@0.5.png" media="(max-width:767px)">
+            <img src="img/Mug_Shop/mug_shop_feedback@1x.png" class="project-img-sqr" alt="Testing Asks and Responses">
+          </picture>
+        </div>
+        <div class="takeaway-banner col-md-12">
+          <p>Users couldn’t find the ‘Add to Wishlist’ button and had difficulties navigating the app because of the verbiage being used in the menu bar.</p>
+        </div>
+        <div class="col-md-6 col-lg-7">
 
-        <picture>
-          <source srcset="img/Mug_Shop/mug_shop_feedback@0.5.png" media="(max-width:767px)">
-          <img src="img/Mug_Shop/mug_shop_feedback@1x.png" alt="Testing Asks and Responses">
-        </picture>
-        <picture>
-          <source srcset="img/Mug_Shop/changes_section@0.5x.png" media="(max-width:767px)">
-          <img src="img/Mug_Shop/changes_section@1x.png" alt="Changes Summary">
-        </picture>
-        <h3>User Testing and Feedback</h3>
-        <p>I asked a group of users to perform specific tasks in the prototype so I could collect feedback on how they were navigating it. The findings helped inform what the final design would look like.   </p>
+          <picture>
+            <source srcset="img/Mug_Shop/changes_section@0.5x.png" media="(max-width:767px)">
+            <img src="img/Mug_Shop/changes_section@1x.png" class="project-img-sqr" alt="Changes Summary">
+          </picture>
 
-      </div>
+        </div>
+        <div class="project-text col-md-6 col-lg-5">
+          <h3>Iteration</h3>
+          <p>Based on the feedback I was given, I revisted certain areas of the design and worked to improve the usability.   </p>
+        </div>
       <!--iuser testing/feedback container end-->
     </div>
     <!--user testing/feedback block end-->
@@ -178,14 +175,16 @@
       <!--design block-->
       <div class="project-section">
         <!--design container-->
-
-        <picture>
-          <source srcset="img/mug_shop/style_guide@0.5x.png" media="(max-width:767px)">
-          <img src="img/mug_shop/style_guide@1x.png" alt="Style Guide">
-        </picture>
-        <h3>Design</h3>
-        <p>I wanted something that communicated the boldness of coffee. I leaned into the palette of browns and creams using black as a neutral shade for things like icons and orange as a highlight to draw the users attention when necessary.  </p>
-
+        <div class="project-text fixed col-md-6 col-lg-5">
+          <h3>Designing the Brand</h3>
+          <p>I wanted something that communicated the boldness of coffee. I leaned into the palette of browns and creams using black as a neutral shade for things like icons and orange as a highlight to draw the users attention when necessary.  </p>
+      </div>
+        <div class="project-text col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/mug_shop/style_guide@0.5x.png" media="(max-width:767px)">
+            <img src="img/mug_shop/style_guide@1x.png" class="project-img-sqr" alt="Style Guide">
+          </picture>
+        </div>
       </div>
       <!--design container end-->
     </div>
@@ -193,10 +192,10 @@
 
     <div class="container">
       <!--Summary block-->
-      <div class="project-section">
+      <div class="project-text project-section">
         <!--summary container-->
 
-        <h3>Mug Shop</h3>
+        <h3>Summary</h3>
         <p>This project started off a lot more ‘bold’ in appearance than it ended up being, which is probably for the best. I originally took the idea of a cup of coffee further than maybe I should have, imagining it as if the Impact typeface was in charge of the style guide. Including lots of thick black borders around items and lines to separate content ended up creating a design that felt suffocating and kinda intimidating. In the final screens shown off here, I toned a lot of that back which has given it a much more approachable look. I think I could do more here by using product photos without a background, adding even more white space.</p>
 
         <p>I’ve also come away with a better appreciation of button placement given the feedback I saw around my ‘Add to Wishlist’ button. I’m ultimately glad I was able to make it work without having to spell it out for the user with a verbal button label.</p>
