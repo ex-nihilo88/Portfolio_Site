@@ -10,18 +10,14 @@ Posable Blue: #5CAAFF; rgba(92,170,255,1)
 Food For You Yellow: #EDB939; rgba(237,185,57,1)
 Buyit Blue: #3174B0; rgba(49,116,176,1)
 */
-
-
 /*
 ul {
   list-style: none;
 }*/
-
 /* animation */
-
 #intro h1 {
   animation: 2s intro-fade 1 ease-out;
-    animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 #intro h2 {
@@ -30,26 +26,38 @@ ul {
 }
 
 @keyframes intro-fade {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-
-
-
 @keyframes cog-spin {
-  0% {transform: rotate(360deg);}
-  100% {transform: rotate(0deg);}
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes cog-spin-r {
-  0% { transform: rotate(0deg);}
-  100% {transform-origin: center; transform: rotateZ(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform-origin: center;
+    transform: rotateZ(360deg);
+  }
 }
 
 .small-cog {
   animation: 15s cog-spin infinite alternate linear;
-
 }
 
 .big-cog {
@@ -57,7 +65,6 @@ ul {
 }
 
 /* animation end */
-
 main {
   padding-top: 56px;
 }
@@ -67,9 +74,9 @@ main {
 }
 
 body {
-  background-color: rgba(255,255,255,1);
-  font-family: 'Roboto', 'Times New Roman';
-  color: rgba(15,15,15,1);
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  color: rgba(15, 15, 15, 1);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -78,6 +85,7 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -92,6 +100,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 700;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -101,9 +110,7 @@ img {
   width: 100%;
 }
 
-
 /* button styles */
-
 #cv-button {
   margin: 40px auto;
   text-align: center;
@@ -111,65 +118,72 @@ img {
 
 .button {
   display: inline-block;
-  background-color: rgba(15,15,15,1);
-  color: rgba(255,255,255,1);
+  background-color: rgba(15, 15, 15, 1);
+  color: rgba(255, 255, 255, 1);
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid rgba(15,15,15,1);
+  border: 2px solid rgba(15, 15, 15, 1);
   transition: .2s;
 }
+
 .button:hover {
   display: inline-block;
-  background-color: rgba(255,255,255,1);
-  color: rgba(15,15,15,1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(15, 15, 15, 1);
   font-weight: 400;
   text-decoration: none;
-  border: 2px solid rgba(15,15,15,1);
+  border: 2px solid rgba(15, 15, 15, 1);
   border-radius: 5px;
 }
+
 .button:active {
   display: inline-block;
-  background-color: rgba(255,255,255,1);
-  color: rgba(15,15,15,1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(15, 15, 15, 1);
   font-weight: 400;
   text-decoration: none;
-  border: 2px solid rgba(15,15,15,1);
+  border: 2px solid rgba(15, 15, 15, 1);
   border-radius: 5px;
 }
 
 .button-contact {
   display: inline-block;
-  background-color: rgba(15,15,15,1);
-  color: #ffffff; /* needed to override the default link color */
+  background-color: rgba(15, 15, 15, 1);
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 0px; /* corner roundness */
-  border: 2px solid rgba(15,15,15,1); /* width of the border, type, color */
+  border-radius: 0px;
+  /* corner roundness */
+  border: 2px solid rgba(15, 15, 15, 1);
+  /* width of the border, type, color */
   transition: 0.2s opacity;
   border-radius: 5px;
   margin: 20px;
   transition-duration: 0.1s;
   transition-property: background-color;
 }
+
 .button-contact:hover {
   display: inline-block;
-  background-color: rgba(255,255,255,1);
-  color: rgba(15,15,15,1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(15, 15, 15, 1);
   font-weight: 400;
   text-decoration: none;
-  border: 2px solid rgba(15,15,15,1);
+  border: 2px solid rgba(15, 15, 15, 1);
   margin: 20px;
 }
+
 .button-contact:active {
   display: inline-block;
-  background-color: rgba(255,255,255,1);
-  color: rgba(15,15,15,1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(15, 15, 15, 1);
   font-weight: 400;
   text-decoration: none;
-  border: 3px solid rgba(15,15,15,1);
+  border: 3px solid rgba(15, 15, 15, 1);
   margin: 20px;
 }
 
@@ -179,49 +193,47 @@ img {
   height: 50px;
   object-fit: scale-down;
   margin: 10px 15px;
-
 }
+
 .social-link {
   text-decoration: none;
 }
 
 /* logo style */
-
 .my-logo {
   height: 35px;
   width: auto;
   object-fit: contain;
 }
 
-
 /* hyper link style*/
 .hyper-link {
-  color: rgba(92,170,255,1);
+  color: rgba(92, 170, 255, 1);
   text-decoration: none;
 }
+
 .hyper-link:visited {
-  color: rgba(92,170,255,.8);
+  color: rgba(92, 170, 255, .8);
   text-decoration: none;
 }
+
 .hyper-link:hover {
-  color: rgba(49,116,176,1);
+  color: rgba(49, 116, 176, 1);
   text-decoration: underline;
 }
 
-
 header {
-  background-color: rgba(244,244,244,1);
+  background-color: rgba(244, 244, 244, 1);
   width: 100%;
   padding: 10px 0 4px;
   position: fixed;
   -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
-  -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.36);
-  box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.36);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
+  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
   z-index: 1;
 }
 
-
-nav > ul {
+nav>ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -244,55 +256,56 @@ nav > ul {
 }
 
 .navtoggle.responsive nav {
-padding: 24px 0 0;
+  padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
-display: block;
-padding: 10px 0;
-border-top: 1px solid rgba(15,15,15,0.2);
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(15, 15, 15, 0.2);
 }
 
-.navtoggle.responsive li:last-child  {
-padding: 0 0 10px;
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
-  color: rgba(15,15,15,1);
+  color: rgba(15, 15, 15, 1);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   text-decoration: underline;
 }
 
-
 /* footer styling */
 #contact-footer {
-  background-color: rgba(244,244,244,1);
+  background-color: rgba(244, 244, 244, 1);
   text-align: center;
   padding: 20px;
   margin-top: 60px;
 }
 
-
 /* layout styling */
-
 .container {
   padding: 0 10px;
 }
 
-.container.gry {
-  background-color: rgba(244,244,244,1);
-  display: table;
+.container-gry {
+  background-color: rgba(244, 244, 244, 1);
+  display: inline-block;
+  margin-top: 50px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -302,40 +315,41 @@ nav > ul > li > a:hover {
 }
 
 #projects .row {
-  padding-bottom: 25px; border-bottom: 1px solid rgba(15,15,15,.5);
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(15, 15, 15, .5);
 }
 
 /* intro syling */
-
 #intro {
-  background-color: rgba(15,15,15,1);
+  background-color: rgba(15, 15, 15, 1);
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   position: fixed;
   z-index: -1;
 }
+
 #projects {
   margin-top: 351px;
   padding-top: 25px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
 }
+
 /*#projects {
   margin-top: 448px;
   padding-top: 25px;
   background-color: rgba(255,255,255,1);
 }
  */
-
-
 #intro h1 {
   font-size: 56px;
   line-height: 56px;
   padding-top: 20px;
   margin: 0px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   transition: .5s;
 }
+
 #intro h2 {
   font-size: 40px;
   font-weight: 400;
@@ -343,9 +357,10 @@ nav > ul > li > a:hover {
   padding-top: 15px;
   padding-bottom: 20px;
   margin: 0px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   transition: .5s;
 }
+
 /* #intro h1 {
   font-size: 120px;
   line-height: 120px;
@@ -363,14 +378,13 @@ nav > ul > li > a:hover {
   padding-left: 100px;
   color: rgba(255,255,255,.8)
 } */
-
 #intro p {
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
 }
 
 /* about styling */
 .my-story h2 {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 8px;
@@ -378,24 +392,23 @@ nav > ul > li > a:hover {
 }
 
 .my-story p {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   font-size: 14px;
   font-weight: bolder;
   padding: 0 10px;
   padding-bottom: 15px;
 }
 
-
-
 #about-me-intro {
   padding-top: 15px;
 }
 
 .about-me-header {
-  background: rgb(123,152,176);
-  background: linear-gradient(45deg, rgba(123,152,176,1) 31%, rgba(83,108,132,1) 69%);
+  background: rgb(123, 152, 176);
+  background: linear-gradient(45deg, rgba(123, 152, 176, 1) 31%, rgba(83, 108, 132, 1) 69%);
   border-radius: 10px;
 }
+
 .portrait {
   height: 297px;
   object-fit: cover;
@@ -408,18 +421,18 @@ nav > ul > li > a:hover {
   padding-right: 14%;
 }
 */
-
 #my-skills {
   padding-left: 0px;
   padding-right: 0px;
 }
 
 .card-skills {
-  color: rgba(15,15,15,1);
-  background-color: rgba(244,244,244,1);
+  color: rgba(15, 15, 15, 1);
+  background-color: rgba(244, 244, 244, 1);
   width: 100%;
   border-radius: 10px;
 }
+
 .card-skills h3 {
   font-size: 20px;
   padding-top: 20px;
@@ -435,29 +448,30 @@ nav > ul > li > a:hover {
 }
 
 /* project study style */
-
 #project-intro {
   padding-top: 15px;
 }
 
 .project-stats h1 {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   font-size: 30px;
+  line-height: 30px;
+  padding-top: 15px;
   margin-top: 0px;
   margin-bottom: 8px;
   padding-left: 10px;
 }
 
 .project-stats h4 {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, .75);
   font-size: 14px;
-  font-weight: 300;
   padding-left: 10px;
   margin-top: 8px;
   margin-bottom: 30px;
 }
+
 .project-stats p {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   font-size: 14px;
   font-weight: bolder;
   padding: 0 10px;
@@ -465,13 +479,8 @@ nav > ul > li > a:hover {
 }
 
 .project-header {
-  background: rgb(213,83,38);
-  background: linear-gradient(45deg, rgba(213,83,38,1) 31%, rgba(128,49,20,1) 69%);
-  /*
-  background: rgb(213,83,38);
-  background: linear-gradient(45deg, rgba(213,83,38,1) 64%, rgba(128,49,20,1) 100%);  */
-
-
+  background: rgb(213, 83, 38);
+  background: linear-gradient(45deg, rgba(213, 83, 38, 1) 31%, rgba(128, 49, 20, 1) 69%);
   border-radius: 10px;
 }
 
@@ -487,21 +496,18 @@ nav > ul > li > a:hover {
 }
 
 .problem {
-  background-color: rgba(244,244,244,1);
+  background-color: rgba(244, 244, 244, 1);
   border-radius: 10px;
-
 }
 
 .objective {
-  background-color: rgba(244,244,244,1);
+  background-color: rgba(244, 244, 244, 1);
   border-radius: 10px;
-
 }
 
 .role {
-  background-color: rgba(244,244,244,1);
+  background-color: rgba(244, 244, 244, 1);
   border-radius: 10px;
-
 }
 
 .problem h3 {
@@ -540,6 +546,7 @@ nav > ul > li > a:hover {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .role p {
   line-height: 2;
   padding-left: 10px;
@@ -549,34 +556,49 @@ nav > ul > li > a:hover {
 
 .project-section {
   margin-top: 15px;
-  margin-bottom: 15px;;
+  margin-bottom: 15px;
+  ;
   margin-left: auto;
   margin-right: auto;
 }
 
+.project-img {
+  margin: 40px 0;
+  width: 300px;
+  float: right;
+  border-radius: 10px;
+}
+
+.project-img-r {
+  margin: 40px 0;
+  width: 300px;
+  float: left;
+  border-radius: 10px;
+}
 
 .takeaway-banner {
   margin: 10px 0;
   padding: 10px;
-  background-color: rgba(15,15,15,1);
-  color: rgba(255,255,255,1);
+  background-color: rgba(15, 15, 15, 1);
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   font-weight: bold;
   font-size: 24px;
+  width: 100%;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-
 @media only screen and (min-width: 640px) {
-
   .col-md-12 {
     width: 100%;
   }
+
   .col-md-9 {
     width: 66%;
   }
+
   .col-md-6 {
     width: 50%;
   }
@@ -587,6 +609,7 @@ Medium devices (640px and larger)
     margin-right: 2%;
     margin-bottom: 2%;
   }
+
   .card-md-6r {
     width: 48%;
     margin-top: 2%;
@@ -601,6 +624,7 @@ Medium devices (640px and larger)
     margin-left: 0;
     margin-bottom: 2%;
   }
+
   .card-skills-md-5r {
     width: 48%;
     margin-top: 2%;
@@ -608,6 +632,7 @@ Medium devices (640px and larger)
     margin-right: 0;
     margin-bottom: 2%;
   }
+
   .card-skills-md-5l h3,
   .card-skills-md-5r h3 {
     font-size: 20px;
@@ -628,6 +653,7 @@ Medium devices (640px and larger)
     float: left;
     padding: 0 10px;
   }
+
   [class*="card-"] {
     float: left;
   }
@@ -635,22 +661,24 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
   }
-  nav{
+
+  nav {
     width: auto;
     float: right;
   }
 
-  nav > ul {
-  margin: 1em 0;
+  nav>ul {
+    margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
@@ -660,17 +688,20 @@ Medium devices (640px and larger)
   }
 
   .my-logo {
-  height: 54px;
-  width: auto;
-  padding-top: 0;
-  object-fit: contain;
-}
-#projects {
-  margin-top: 413px;
-}
+    height: 54px;
+    width: auto;
+    padding-top: 0;
+    object-fit: contain;
+  }
+
+  #projects {
+    margin-top: 413px;
+  }
+
   #project-intro {
     margin-top: 15px;
   }
+
   #about-me-intro {
     margin-top: 15px;
   }
@@ -681,15 +712,9 @@ Medium devices (640px and larger)
     float: left;
   }
 
-  .project-img-sqr {
-    margin: 40px 0;
-    width: 300px;
-    float: right;
-  }
-
   .project-header {
-    background: rgb(213,83,38);
-    background: linear-gradient(45deg, rgba(213,83,38,1) 64%, rgba(128,49,20,1) 100%);
+    background: rgb(213, 83, 38);
+    background: linear-gradient(45deg, rgba(213, 83, 38, 1) 64%, rgba(128, 49, 20, 1) 100%);
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -712,7 +737,6 @@ Medium devices (640px and larger)
     border-radius: 10px 0 0 10px;
   }
 
-
   .problem h3 {
     font-size: 20px;
     line-height: 20px;
@@ -722,6 +746,7 @@ Medium devices (640px and larger)
   .problem span {
     font-weight: bold;
   }
+
   .objective h3 {
     font-size: 20px;
     line-height: 20px;
@@ -739,12 +764,14 @@ Medium devices (640px and larger)
     line-height: 20px;
     padding-top: 0px;
   }
+
   .role p {
     line-height: 2;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
   }
+
   .takeaway-banner {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -755,38 +782,41 @@ Medium devices (640px and larger)
     margin-left: 100px;
     margin-right: 100px;
   }
+
   .project-text.fixed {
     position: -webkit- sticky;
     position: sticky;
     top: 75px;
   }
 
-
   #intro span {
     display: block;
   }
+
   #intro h1 {
-   font-size: 80px;
-   line-height: 80px;
-   padding-top: 50px;
- }
- #intro h2 {
-   font-size: 56px;
-   font-weight: 500;
-   line-height: 56px;
-   padding-top: 25px;
-   padding-bottom: 50px;
- }
+    font-size: 80px;
+    line-height: 80px;
+    padding-top: 50px;
+  }
+
+  #intro h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 56px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
 
   .about-me-header {
-    background: rgb(123,152,176);
-    background: linear-gradient(45deg, rgba(123,152,176,1) 64%, rgba(83,108,132,1) 100%);
+    background: rgb(123, 152, 176);
+    background: linear-gradient(45deg, rgba(123, 152, 176, 1) 64%, rgba(83, 108, 132, 1) 100%);
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     height: 395px;
     margin-bottom: 15px;
   }
+
   .portrait {
     height: 395px;
     object-fit: cover;
@@ -801,6 +831,7 @@ Medium devices (640px and larger)
     margin-top: 120px;
   }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -810,11 +841,12 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   .container-gry {
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .card-lg-3l {
     width: 31%;
     margin-top: 2%;
@@ -825,6 +857,7 @@ Large devices (1024px or larger)
     padding: 0 20px;
     height: 366px;
   }
+
   .card-lg-3m {
     width: 31%;
     margin-top: 2%;
@@ -835,6 +868,7 @@ Large devices (1024px or larger)
     padding: 0 20px;
     height: 366px;
   }
+
   .card-lg-3r {
     width: 31%;
     margin-top: 2%;
@@ -846,6 +880,7 @@ Large devices (1024px or larger)
     padding: 0 22px;
     height: 366px;
   }
+
   .card-skills-lg-3l {
     width: 21%;
     margin-right: 5.3%;
@@ -854,6 +889,7 @@ Large devices (1024px or larger)
     border-radius: 20px;
     float: left;
   }
+
   .card-skills-lg-3r {
     width: 21%;
     margin-left: 0;
@@ -861,6 +897,7 @@ Large devices (1024px or larger)
     border-radius: 20px;
     float: right;
   }
+
   .card-skills-lg-3l h3,
   .card-skills-lg-3r h3 {
     font-size: 26px;
@@ -879,12 +916,15 @@ Large devices (1024px or larger)
     padding-right: 20px;
     padding-bottom: 20px;
   }
+
   .col-lg-12 {
     width: 100%;
   }
+
   .col-lg-5 {
     width: 33%;
   }
+
   .col-lg-7 {
     width: 66%;
   }
@@ -897,14 +937,17 @@ Large devices (1024px or larger)
     float: left;
     padding: 0 10px;
   }
+
   header {
     text-align: unset;
   }
-  nav{
+
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
   #projects {
     margin-top: 453px;
   }
@@ -914,19 +957,18 @@ Large devices (1024px or larger)
   }
 
   #intro h1 {
-   font-size: 120px;
-   line-height: 120px;
-   padding-top: 50px;
- }
- #intro h2 {
-   font-size: 80px;
-   font-weight: 500;
-   line-height: 84px;
-   padding-top: 25px;
-   padding-bottom: 50px;
- }
+    font-size: 120px;
+    line-height: 120px;
+    padding-top: 50px;
+  }
 
-
+  #intro h2 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 84px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
 
   #contact-footer {
     margin-top: 0px;
@@ -940,6 +982,7 @@ Large devices (1024px or larger)
     margin-bottom: 15px;
     border-radius: 20px;
   }
+
   .portrait {
     height: 529px;
     object-fit: cover;
@@ -950,6 +993,7 @@ Large devices (1024px or larger)
     padding-top: 15px;
     font-size: 40px;
   }
+
   .my-story p {
     padding-top: 0px;
     font-size: 16px;
@@ -972,13 +1016,13 @@ Large devices (1024px or larger)
   .project-stats {
     padding-top: 25px;
   }
+
   .project-stats h1 {
     font-size: 40px;
   }
 
   .project-stats h4 {
     font-size: 18px;
-    font-weight: 300;
   }
 
   .project-stats p {
@@ -992,57 +1036,74 @@ Large devices (1024px or larger)
     padding-left: 0px;
     margin-bottom: 0px;
   }
+
   .objective h3 {
     font-size: 26px;
     line-height: 26px;
     padding-left: 0px;
     margin-bottom: 0px;
   }
+
   .role h3 {
     font-size: 26px;
     line-height: 26px;
     padding-left: 0px;
     margin-bottom: 0px;
   }
+
   .problem p {
     font-size: 21px;
     padding-left: 0px;
     margin-top: 21px;
   }
+
   .objective p {
     font-size: 21px;
     padding-left: 0px;
     margin-top: 21px;
   }
+
   .role p {
     font-size: 21px;
     padding-left: 0px;
     margin-top: 21px;
   }
+
   .project-text h3 {
     font-size: 36px;
     line-height: normal;
     margin-bottom: 0;
   }
+
   .project-text p {
     font-size: 21px;
     margin-top: 21px;
   }
-  .project-img-sqr {
+
+  .project-img {
     width: 636px;
     height: auto;
     margin-top: 40px;
     margin-bottom: auto;
     object-fit: fill;
+    border-radius: 20px;
   }
+
+  .project-img-r {
+    width: 636px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
+    object-fit: fill;
+    border-radius: 20px;
+  }
+
   .project-section {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
-
   .takeaway-banner {
-    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 30px;
@@ -1050,16 +1111,12 @@ Large devices (1024px or larger)
   }
 }
 
-
-
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
   .my-story p {
     padding-top: 0px;
     font-size: 18px;
   }
-
 }
