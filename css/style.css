@@ -715,6 +715,7 @@ Medium devices (640px and larger)
 
   .problem h3 {
     font-size: 20px;
+    line-height: 20px;
     padding-top: 0px;
   }
 
@@ -723,6 +724,7 @@ Medium devices (640px and larger)
   }
   .objective h3 {
     font-size: 20px;
+    line-height: 20px;
     padding-top: 0px;
   }
 
@@ -734,6 +736,7 @@ Medium devices (640px and larger)
 
   .role h3 {
     font-size: 20px;
+    line-height: 20px;
     padding-top: 0px;
   }
   .role p {
@@ -985,16 +988,19 @@ Large devices (1024px or larger)
 
   .problem h3 {
     font-size: 26px;
+    line-height: 26px;
     padding-left: 0px;
     margin-bottom: 0px;
   }
   .objective h3 {
     font-size: 26px;
+    line-height: 26px;
     padding-left: 0px;
     margin-bottom: 0px;
   }
   .role h3 {
     font-size: 26px;
+    line-height: 26px;
     padding-left: 0px;
     margin-bottom: 0px;
   }
