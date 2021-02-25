@@ -19,6 +19,24 @@ ul {
 
 /* animation */
 
+#intro h1 {
+  animation: 2s intro-fade 1 ease-out;
+    animation-fill-mode: both;
+}
+
+#intro h2 {
+  animation: 2s intro-fade 0.7s 1 ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes intro-fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+
 @keyframes cog-spin {
   0% {transform: rotate(360deg);}
   100% {transform: rotate(0deg);}
@@ -31,6 +49,7 @@ ul {
 
 .small-cog {
   animation: 15s cog-spin infinite alternate linear;
+
 }
 
 .big-cog {
@@ -49,7 +68,7 @@ main {
 
 body {
   background-color: rgba(255,255,255,1);
-  font-family: 'Roboto', helvetica;
+  font-family: 'Roboto', 'Times New Roman';
   color: rgba(15,15,15,1);
   font-size: 16px;
   font-weight: 300;
@@ -99,8 +118,7 @@ img {
   padding: 10px;
   border-radius: 5px;
   border: 2px solid rgba(15,15,15,1);
-  transition: .2s background-color;
-  transition: .2s color;
+  transition: .2s;
 }
 .button:hover {
   display: inline-block;
@@ -294,12 +312,49 @@ nav > ul > li > a:hover {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+#projects {
+  margin-top: 448px;
+  padding-top: 25px;
+  background-color: rgba(255,255,255,1);
 }
 
+
 #intro h1 {
-  text-align: center;
+  font-size: 56px;
+  line-height: 56px;
+  padding-top: 20px;
+  margin: 0px;
   color: rgba(255,255,255,1)
 }
+#intro h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin: 0px;
+  color: rgba(255,255,255,0.7)
+}
+/* #intro h1 {
+  font-size: 120px;
+  line-height: 120px;
+  padding-top: 50px;
+  margin: 0px;
+  color: rgba(255,255,255,1)
+}
+#intro h2 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 84px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin: 0px;
+  padding-left: 100px;
+  color: rgba(255,255,255,.8)
+} */
 
 #intro p {
   color: rgba(255,255,255,.8);
@@ -329,8 +384,8 @@ nav > ul > li > a:hover {
 }
 
 .about-me-header {
-  background: rgb(139,165,186);
-  background: linear-gradient(45deg, rgba(139,165,186,1) 31%, rgba(83,108,132,1) 69%);
+  background: rgb(123,152,176);
+  background: linear-gradient(45deg, rgba(123,152,176,1) 31%, rgba(83,108,132,1) 69%);
   border-radius: 10px;
 }
 .portrait {
@@ -395,7 +450,7 @@ nav > ul > li > a:hover {
 }
 .project-stats p {
   color: rgba(255,255,255,1);
-  font-size: 14;
+  font-size: 14px;
   font-weight: bolder;
   padding: 0 10px;
   padding-bottom: 15px;
@@ -499,7 +554,7 @@ nav > ul > li > a:hover {
   color: rgba(255,255,255,1);
   text-align: center;
   font-weight: bold;
-  font-size: 24;
+  font-size: 24px;
 }
 
 /* ==============================
@@ -697,10 +752,22 @@ Medium devices (640px and larger)
   #intro span {
     display: block;
   }
+  #intro h1 {
+   font-size: 80px;
+   line-height: 80px;
+   padding-top: 50px;
+ }
+ #intro h2 {
+   font-size: 56px;
+   font-weight: 500;
+   line-height: 56px;
+   padding-top: 25px;
+   padding-bottom: 50px;
+ }
 
   .about-me-header {
-    background: rgb(139,165,186);
-    background: linear-gradient(45deg, rgba(139,165,186,1) 64%, rgba(83,108,132,1) 100%);
+    background: rgb(123,152,176);
+    background: linear-gradient(45deg, rgba(123,152,176,1) 64%, rgba(83,108,132,1) 100%);
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -831,6 +898,18 @@ Large devices (1024px or larger)
     display: block;
   }
 
+  #intro h1 {
+   font-size: 120px;
+   line-height: 120px;
+   padding-top: 50px;
+ }
+ #intro h2 {
+   font-size: 80px;
+   font-weight: 500;
+   line-height: 84px;
+   padding-top: 25px;
+   padding-bottom: 50px;
+ }
 
 
   #contact-footer {
