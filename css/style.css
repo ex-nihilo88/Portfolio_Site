@@ -265,7 +265,6 @@ nav>ul>li>a:hover {
   background-color: rgba(244, 244, 244, 1);
   text-align: center;
   padding: 20px;
-  margin-top: 60px;
 }
 
 /* layout styling */
@@ -310,7 +309,8 @@ nav>ul>li>a:hover {
 
 #projects {
   margin-top: 351px;
-  padding-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 50px;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -806,10 +806,6 @@ Medium devices (640px and larger)
     padding-top: 15px;
   }
 
-  #contact-footer {
-    margin-top: 120px;
-  }
-}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -949,9 +945,6 @@ Large devices (1024px or larger)
     padding-bottom: 50px;
   }
 
-  #contact-footer {
-    margin-top: 0px;
-  }
 
   .about-me-header {
     margin-left: auto;
