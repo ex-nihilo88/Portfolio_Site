@@ -543,15 +543,11 @@ nav>ul>li>a:hover {
 
 .project-img {
   margin: 40px 0;
-  width: 300px;
-  float: right;
   border-radius: 10px;
 }
 
 .project-img-r {
   margin: 40px 0;
-  width: 300px;
-  float: left;
   border-radius: 10px;
 }
 
@@ -766,6 +762,13 @@ Medium devices (640px and larger)
     position: -webkit- sticky;
     position: sticky;
     top: 75px;
+  }
+  .project-img {
+    float: right;
+  }
+
+  .project-img-r {
+    float: left;
   }
 
   #intro span {
