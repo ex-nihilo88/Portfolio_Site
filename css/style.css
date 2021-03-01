@@ -95,36 +95,35 @@ img {
   text-align: center;
 }
 
+.button-arrow {
+  float: right;
+  padding-left: 8px;
+  height: 21px;
+}
+
+
 .button {
   display: inline-block;
   background-color: rgba(15, 15, 15, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
+  line-height: 21px;
   text-decoration: none;
-  padding: 10px;
+  padding: 12px;
   border-radius: 5px;
   border: 2px solid rgba(15, 15, 15, 1);
   transition: .2s;
 }
 
 .button:hover {
-  display: inline-block;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(15, 15, 15, 1);
-  font-weight: 400;
-  text-decoration: none;
-  border: 2px solid rgba(15, 15, 15, 1);
-  border-radius: 5px;
 }
 
 .button:active {
-  display: inline-block;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(15, 15, 15, 1);
   font-weight: 400;
-  text-decoration: none;
-  border: 2px solid rgba(15, 15, 15, 1);
-  border-radius: 5px;
 }
 
 .button-contact {
@@ -282,8 +281,14 @@ nav>ul>li>a:hover {
 }
 
 .row {
-  margin: 25px 0;
+  margin-top: 25px;
   /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row {
+  padding-bottom: 50px;
+  /*   border-bottom: 1px solid rgba(15, 15, 15, .5);  */
+
 }
 
 .row::after {
@@ -292,9 +297,12 @@ nav>ul>li>a:hover {
   display: table;
 }
 
-#projects .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgba(15, 15, 15, .5);
+
+#projects {
+  margin-top: 311px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* intro syling */
@@ -307,19 +315,6 @@ nav>ul>li>a:hover {
   z-index: -1;
 }
 
-#projects {
-  margin-top: 351px;
-  padding-top: 15px;
-  padding-bottom: 50px;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-/*#projects {
-  margin-top: 448px;
-  padding-top: 25px;
-  background-color: rgba(255,255,255,1);
-}
- */
 #intro h1 {
   font-size: 56px;
   line-height: 56px;
@@ -340,25 +335,27 @@ nav>ul>li>a:hover {
   transition: .5s;
 }
 
-/* #intro h1 {
-  font-size: 120px;
-  line-height: 120px;
-  padding-top: 50px;
-  margin: 0px;
-  color: rgba(255,255,255,1)
-}
-#intro h2 {
-  font-size: 80px;
-  font-weight: 500;
-  line-height: 84px;
-  padding-top: 25px;
-  padding-bottom: 50px;
-  margin: 0px;
-  padding-left: 100px;
-  color: rgba(255,255,255,.8)
-} */
+
 #intro p {
   color: rgba(255, 255, 255, .8);
+}
+
+#projects h2 {
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+}
+.project-description h3 {
+  font-size: 26px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.project-description p {
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 
 /* about styling */
@@ -574,6 +571,12 @@ Medium devices (640px and larger)
     width: 66%;
   }
 
+  .col-md-7 {
+    width: 60%;
+  }
+  .col-md-5 {
+    width: 40%;
+  }
   .col-md-6 {
     width: 50%;
   }
@@ -680,8 +683,28 @@ Medium devices (640px and larger)
     object-fit: contain;
   }
 
+  #projects .row {
+    border-bottom: 0;
+  }
+
   #projects {
     margin-top: 413px;
+  }
+
+  .project-description-img {
+    padding-left: 0;
+  }
+
+  .project-description h3 {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .project-description p {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   #project-intro {
@@ -939,6 +962,41 @@ Large devices (1024px or larger)
 
     #projects {
       margin-top: 453px;
+    }
+
+    #projects h2 {
+      font-size: 48px;
+      line-height: 48px;
+      padding-top: 25px;
+      padding-bottom: 50px;
+      margin: 0;
+    }
+
+    .row {
+      margin-bottom: 100px;
+    }
+
+    .project-description-img {
+      padding-left: 0;
+      padding-right: 14px;
+    }
+
+    .project-description h3 {
+      font-size: 36px;
+      line-height: 36px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .project-description p {
+      font-size: 21px;
+      font-weight: 400;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+
+    #projects .button {
+      position: relative;
     }
 
     #intro span {
