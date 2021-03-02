@@ -35,14 +35,6 @@ ul {
   }
 }
 
-.small-cog {
-  animation: 15s cog-spin infinite alternate linear;
-}
-
-.big-cog {
-  animation: 15s cog-spin-r infinite alternate linear;
-}
-
 /* animation end */
 main {
   padding-top: 56px;
@@ -54,7 +46,7 @@ main {
 
 body {
   background-color: rgba(255, 255, 255, 1);
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: rgba(15, 15, 15, 1);
   font-size: 16px;
   font-weight: 300;
@@ -130,14 +122,11 @@ img {
   display: inline-block;
   background-color: rgba(15, 15, 15, 1);
   color: #ffffff;
-  /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 0px;
-  /* corner roundness */
   border: 2px solid rgba(15, 15, 15, 1);
-  /* width of the border, type, color */
   transition: 0.2s opacity;
   border-radius: 5px;
   margin: 20px;
@@ -201,13 +190,16 @@ img {
 }
 
 header {
-  background-color: rgba(244, 244, 244, 1);
+  background-color: rgba(244, 244, 244, .97);
   width: 100%;
   padding: 10px 0 4px;
   position: fixed;
-  -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
-  -moz-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
-  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.36);
+
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.25);
+  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.25);
+
+
   z-index: 1;
 }
 
@@ -282,12 +274,10 @@ nav>ul>li>a:hover {
 
 .row {
   margin-top: 25px;
-  /* 25px top and bottom, 0 left and right */
 }
 
 #projects .row {
   padding-bottom: 50px;
-  /*   border-bottom: 1px solid rgba(15, 15, 15, .5);  */
 
 }
 
@@ -622,6 +612,7 @@ Medium devices (640px and larger)
   .card-skills-md-5l p,
   .card-skills-md-5r p {
     line-height: 2;
+    font-weight: 400;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -924,6 +915,7 @@ Large devices (1024px or larger)
     .card-skills-lg-5r p {
       line-height: 2;
       font-size: 21px;
+      font-weight: 400;
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 20px;
@@ -1096,18 +1088,21 @@ Large devices (1024px or larger)
 
     .problem p {
       font-size: 21px;
+      font-weight: 400;
       padding-left: 0px;
       margin-top: 21px;
     }
 
     .objective p {
       font-size: 21px;
+      font-weight: 400;
       padding-left: 0px;
       margin-top: 21px;
     }
 
     .role p {
       font-size: 21px;
+      font-weight: 400;
       padding-left: 0px;
       margin-top: 21px;
     }
@@ -1120,6 +1115,7 @@ Large devices (1024px or larger)
 
     .project-text p {
       font-size: 21px;
+      font-weight: 400;
       margin-top: 21px;
     }
 
@@ -1151,6 +1147,10 @@ Large devices (1024px or larger)
       margin-bottom: 50px;
       padding-top: 30px;
       padding-bottom: 30px;
+    }
+    .takeaway-banner p {
+      margin-left: 25%;
+      margin-right: 25%;
     }
   }
 
