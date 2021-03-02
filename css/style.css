@@ -190,7 +190,7 @@ img {
 }
 
 header {
-  background-color: rgba(244, 244, 244, .97);
+  background-color: rgba(244, 244, 244, 1);
   width: 100%;
   padding: 10px 0 4px;
   position: fixed;
@@ -354,15 +354,15 @@ nav>ul>li>a:hover {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 8px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .my-story p {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  font-weight: bolder;
-  padding: 0 10px;
-  padding-bottom: 15px;
+  font-weight: 400;
+  padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 #about-me-intro {
@@ -381,12 +381,6 @@ nav>ul>li>a:hover {
   border-radius: 10px 10px 0 0;
 }
 
-/*  centering code WIP
-#my-skills {
-  padding-left: 14%;
-  padding-right: 14%;
-}
-*/
 #my-skills {
   padding-left: 0px;
   padding-right: 0px;
@@ -407,6 +401,7 @@ nav>ul>li>a:hover {
 }
 
 .card-skills p {
+  font-weight: 400;
   line-height: 2;
   padding-left: 20px;
   padding-right: 20px;
@@ -439,7 +434,7 @@ nav>ul>li>a:hover {
 .project-stats p {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  font-weight: bolder;
+  font-weight: 400;
   padding: 0 10px;
   padding-bottom: 15px;
 }
@@ -488,6 +483,7 @@ nav>ul>li>a:hover {
 }
 
 .problem p {
+  font-weight: 400;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -501,6 +497,7 @@ nav>ul>li>a:hover {
 }
 
 .objective p {
+  font-weight: 400;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -514,10 +511,15 @@ nav>ul>li>a:hover {
 }
 
 .role p {
+  font-weight: 400;
   line-height: 2;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+}
+
+.project-text p {
+  font-weight: 400;
 }
 
 .project-section {
@@ -529,12 +531,12 @@ nav>ul>li>a:hover {
 }
 
 .project-img {
-  margin: 40px 0;
+  margin: 20px 0;
   border-radius: 10px;
 }
 
 .project-img-r {
-  margin: 40px 0;
+  margin: 20px 0;
   border-radius: 10px;
 }
 
@@ -547,6 +549,7 @@ nav>ul>li>a:hover {
   font-weight: bold;
   font-size: 24px;
   width: 100%;
+  border-radius: 10px;
 }
 
 /* ==============================
@@ -573,6 +576,7 @@ Medium devices (640px and larger)
 
   .card-md-6l {
     width: 48%;
+    height: 236px;
     margin-top: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -580,6 +584,7 @@ Medium devices (640px and larger)
 
   .card-md-6r {
     width: 48%;
+    height: 236px;
     margin-top: 2%;
     margin-left: 2%;
     margin-bottom: 2%;
@@ -788,12 +793,15 @@ Medium devices (640px and larger)
     position: sticky;
     top: 75px;
   }
-
   .project-img {
+    margin: 40px 0;
+    border-radius: 10px;
     float: right;
   }
 
   .project-img-r {
+    margin: 40px 0;
+    border-radius: 10px;
     float: left;
   }
 
@@ -821,18 +829,22 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    height: 395px;
+    height: 435px;
     margin-bottom: 15px;
   }
 
   .portrait {
-    height: 395px;
+    height: 435px;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
   }
 
   .my-story {
     padding-top: 15px;
+  }
+  .my-story h2,
+  .my-story p {
+    padding-left: 5px;
   }
 
   /* ==============================
@@ -885,8 +897,8 @@ Large devices (1024px or larger)
     }
 
     .card-skills-lg-3l {
-      width: 21%;
-      margin-right: 5.3%;
+      width: 22%;
+      margin-right: 4.3%;
       margin-left: 0%;
       margin-bottom: 2%;
       border-radius: 20px;
@@ -904,9 +916,10 @@ Large devices (1024px or larger)
     .card-skills-lg-3l h3,
     .card-skills-lg-3r h3 {
       font-size: 26px;
+      line-height: 26px;
       margin-top: 15px;
       margin-bottom: 0;
-      padding-top: 0px;
+      padding-top: 20px;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -949,7 +962,6 @@ Large devices (1024px or larger)
     nav {
       width: auto;
       float: right;
-      margin-top: 4px;
     }
 
     #projects {
@@ -1025,11 +1037,13 @@ Large devices (1024px or larger)
     }
 
     .my-story h2 {
+      padding-left: 5px;
       padding-top: 15px;
       font-size: 40px;
     }
 
     .my-story p {
+      padding-left: 5px;
       padding-top: 0px;
       font-size: 16px;
     }
@@ -1138,8 +1152,8 @@ Large devices (1024px or larger)
     }
 
     .project-section {
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 100px;
+      margin-bottom: 100px;
     }
 
     .takeaway-banner {
@@ -1147,6 +1161,7 @@ Large devices (1024px or larger)
       margin-bottom: 50px;
       padding-top: 30px;
       padding-bottom: 30px;
+      border-radius: 20px;
     }
     .takeaway-banner p {
       margin-left: 25%;
