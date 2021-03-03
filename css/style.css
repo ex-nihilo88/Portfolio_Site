@@ -10,10 +10,10 @@ Posable Blue: #5CAAFF; rgba(92,170,255,1)
 Food For You Yellow: #EDB939; rgba(237,185,57,1)
 Buyit Blue: #3174B0; rgba(49,116,176,1)
 */
-/*
-ul {
-  list-style: none;
-}*/
+
+/* image slide test */
+
+
 /* animation */
 #intro h1 {
   animation: 2s intro-fade 1 ease-out;
@@ -74,7 +74,7 @@ h3 {
 
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 img {
@@ -447,6 +447,14 @@ nav>ul>li>a:hover {
   background: linear-gradient(45deg, rgba(213, 83, 38, 1) 31%, rgba(128, 49, 20, 1) 69%);
   border-radius: 10px;
 }
+.project-header.mug-shop {
+  background: rgb(213, 83, 38);
+  background: linear-gradient(45deg, rgba(213, 83, 38, 1) 31%, rgba(128, 49, 20, 1) 69%);
+}
+.project-header.poseable {
+  background: rgb(92,170,255);
+  background: linear-gradient(45deg, rgba(92,170,255,1) 31%, rgba(38,101,171,1) 69%);
+}
 
 .project-header-img {
   height: 297px;
@@ -520,6 +528,14 @@ nav>ul>li>a:hover {
   padding-right: 10px;
   padding-bottom: 10px;
 }
+.disclaimer {
+  display: inline;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.disclaimer span{
+  font-weight: bold;
+}
 
 .project-text p {
   font-weight: 400;
@@ -532,6 +548,11 @@ nav>ul>li>a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+.desktop {
+  display: none;
+}
+/* anything with .mobile will be removed on any screen larger than 640px and replaced with .desktop content, to be used to reorder content between views */
 
 .project-img {
   margin: 20px 0;
@@ -635,6 +656,15 @@ Medium devices (640px and larger)
     float: left;
   }
 
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+
+
   header {
     text-align: unset;
   }
@@ -721,13 +751,19 @@ Medium devices (640px and larger)
   }
 
   .project-header {
-    background: rgb(213, 83, 38);
-    background: linear-gradient(45deg, rgba(213, 83, 38, 1) 64%, rgba(128, 49, 20, 1) 100%);
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     height: 367px;
     margin-bottom: 15px;
+  }
+  .project-header.mug-shop {
+    background: rgb(213, 83, 38);
+    background: linear-gradient(45deg, rgba(213, 83, 38, 1) 64%, rgba(128, 49, 20, 1) 100%);
+  }
+  .project-header.poseable {
+    background: rgb(92,170,255);
+    background: linear-gradient(45deg, rgba(92,170,255) 64%, rgba(38,101,171,1) 100%);
   }
 
   .project-stats {

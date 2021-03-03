@@ -49,13 +49,13 @@
       <!--intro block-->
       <div id="project-intro" class="container">
         <!--intro container-->
-        <div class="project-header mug-shop">
+        <div class="project-header poseable">
 
           <div class="img-align col-md-7 col-lg-7">
             <!--header image-->
             <picture>
-              <source srcset="img/mug_shop/header_test@0.5x.png" media="(max-width:640px)">
-              <img src="img/mug_shop/header_test.png" class="project-header-img" alt="Mug Shop Mockup">
+              <source srcset="img/posable/poseable-project-header@0.5x.png" media="(max-width:640px)">
+              <img src="img/posable/poseable-project-header.png" class="project-header-img" alt="Poseable Mockup">
             </picture>
           </div>
           <!--header image end-->
@@ -63,10 +63,10 @@
 
           <div class="project-stats col-md-5 col-lg-5">
             <!--intro text column-->
-            <h1>Mug Shop</h1>
+            <h1>Poseable</h1>
             <h4>2020 - STUDENT PROJECT - 4 WEEKS</h4>
-            <p>Mug Shop is a fictional e-commerce mobile application that specializes in coffee and brewing supplies.<br><br>Like most people who are firing on all caffeinated cylindars, Mug Shop is bold and straight to the point with it’s clear
-              layout and personalized recommendations.</p>
+            <p>Posable is a clear and simple tool for artists in need of anatomical reference while they work.
+            It uses high quality, 3D models of humanoids in pre-set poses allowing the user to control camera angles and light settings to create the perfect scene to study.</p>
           </div>
         </div>
         <!--intro text column end-->
@@ -74,21 +74,21 @@
         <div class="problem card-md-6l card-lg-3l">
           <!--problem text column-->
           <h3>Problem</h3>
-          <p>Mug Shop needed a mobile application that provided a streamlined buying experience for the user.<span> There had to be as few screens as possible between the home and checkout page.</span></p>
+          <p>I’ve used multiple apps that provide anatomical reference tools but I’ve always found them overwhelming.<span> I wanted to put the focus on the pose itself while still giving the user the necessary tools to do their work.</span></p>
         </div>
         <!--problem text column end-->
 
         <div class="objective card-md-6r card-lg-3m">
           <!--objectives text column-->
           <h3>Objective</h3>
-          <p>Design a mobile application for people who want to shop for key items without going into a physical store.<br><br>Establish it’s visual brand with a logo, colour palette, and style guide</p>
+          <p>Design one mobile application for both iOS and Android that provided identical feature sets and similar user flows.<br><br>Make each version feel native to their respective OS.</p>
         </div>
         <!--objectives text column end-->
 
         <div class="role card-md-6l card-lg-3r">
           <!--role text column-->
           <h3>Role</h3>
-          <p>UX Design<br>Wireframing<br>Art Director<br>UI Design</p>
+          <p>UX Design<br>Wireframing<br>UI Design</p>
         </div>
         <!--role text column end-->
 
@@ -102,18 +102,46 @@
       <!--research block-->
       <div class="project-section">
         <!--research container-->
+        <div class="disclaimer col-md-12">
+          <p><span>Disclaimer:</span> For the purpose of this exercise, all images of the 3D models used in the UI mockups were exported from the ArtPose iOS app.</p>
+        </div>
 
         <div class="project-text fixed col-md-6 col-lg-5">
           <h3>Research</h3>
-          <p>The research for this project was provided ahead of time. The key takeaway was that users wanted a quick and efficient way to shop for items. I decided to focus on flows that lowered the barrier of entry, encouraged buying at the users own pace, and having quick access to sales and promotions.</p>
+          <p>I started with a competitive analysis of 3 apps that provided the same basic feature set. Having used all of them myself at some point while illustrating, I knew where I wanted to go with my design goals.</p>
         </div>
+
         <div class="col-md-6 col-lg-7">
           <picture>
-            <source srcset="img/mug_shop/user_flows@0.5x.png" media="(max-width:767px)">
-            <img src="img/mug_shop/user_flows.png" class="project-img" alt="User Flows">
+            <source srcset="img/posable/comp_analysis@0.5x.png" media="(max-width:767px)">
+            <img src="img/posable/comp_analysis.png" class="project-img" alt="Competetive Analysis">
           </picture>
         </div>
+
       </div>
+
+      <div class="takeaway-banner col-md-12">
+        <p>My design needed to be minimilistic and stay out of the way.<br><br>Put the focus on the pose.</p>
+      </div>
+
+      <div class="project-section">
+        <div class="project-text mobile fixed col-md-6 col-lg-5">
+          <p><br>I focused on a small number of key features while creating the user flows. The other apps certainly had more bells and whistles, but I think that may have been to their detriment.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/posable/user_flows@0.5x.png" media="(max-width:767px)">
+            <img src="img/posable/user_flows.png" class="project-img-r" alt="User Flows">
+          </picture>
+        </div>
+
+        <div class="project-text desktop fixed col-md-6 col-lg-5">
+          <p><br>I focused on a small number of key features while creating the user flows. The other apps certainly had more bells and whistles, but I think that may have been to their detriment.</p>
+        </div>
+
+      </div>
+
       <!--research container end-->
     </div>
     <!--research block end-->
@@ -124,15 +152,18 @@
         <!--idea/wireframe container-->
         <div class="project-text col-md-6 col-lg-5">
           <h3>Ideation and Wireframes</h3>
-          <p>After creating the user flows, I started doing some rough sketches of each of the screens I would need. I wanted to keep the interface clean and accessible so I started with fairly large sized items. Once I was happy with the basic layout, I created some low fidelity wireframes that could be used in a prototype and tested before
-            moving on.</p>
+          <p>The main pain point I noticed from the competitors is that they have too many buttons available at all times. This created a cluttered UI that was hard to use on smaller screens. I aimed to fix this by only displaying options that are relevant to the mode the user is in.</p>
+          <h4>Camera/View Mode:</h4>
+          <p>The users gestures would rotate and pan the camera and contextual buttons would allow them to switch between a skin, muscle, and bone model view.</p>
+          <h4>Light Mode:</h4>
+          <p>The users gestures would rotate and pan the light source and contextual buttons would allow them to switch light colours and modes.</p>
         </div>
 
 
         <div class="col-md-6 col-lg-7">
           <picture>
-            <source srcset="img/mug_shop/sketches.png" media="(max-width:767px)">
-            <img src="img/mug_shop/sketches@1x.png" class="project-img" alt="Initial Sketches">
+            <source srcset="img/posable/lofi_wireframes@0.5x.png" media="(max-width:767px)">
+            <img src="img/posable/lofi_wireframes.png" class="project-img" alt="Initial Sketches">
           </picture>
         </div>
 
@@ -147,142 +178,47 @@
         <!--user testing/feedback container-->
         <div class="project-text fixed col-md-6 col-lg-5">
           <h3>User Testing and Feedback</h3>
-          <p>I asked a group of users to perform specific tasks in the prototype so I could collect feedback on how they were navigating it. I wanted to ensure that the user flows could be completed easily with the provided screens. The findings helped inform what the final design would look like.</p>
+          <p>The testing was separated into 2 groups, one for each version of the application. To test how well the designs mimicked their respective home OS, I tried to make sure that iOS users tested the iOS version and vice versa.</p>
         </div>
         <div class="col-md-6 col-lg-7">
           <picture>
-            <source srcset="img/mug_shop/mug_shop_feedback@0.5.png" media="(max-width:767px)">
-            <img src="img/mug_shop/mug_shop_feedback@1x.png" class="project-img" alt="Testing Asks and Responses">
+            <source srcset="img/posable/user_feedback@0.5x.png" media="(max-width:767px)">
+            <img src="img/posable/user_feedback.png" class="project-img" alt="Testing Asks and Responses">
           </picture>
         </div>
       </div>
 
       <div class="takeaway-banner col-md-12">
-        <p>Users couldn’t find the ‘Add to Wishlist’ button and had difficulties navigating the app because of the verbiage being used in the menu bar.</p>
+        <p>I had a hard time visually communicating how the toggle and contextual options should work.<br><br>I had made it too minimal.</p>
       </div>
 
       <div class="project-section">
 
+<!-- Remember that because the text is first on mobile view and second on desktop view, the copy is duplicated and hidden when necessary -->
+
         <div class="project-text mobile col-md-6 col-lg-5">
           <h3>Iteration</h3>
-          <p>Based on the feedback I was given, I revisted certain areas of the design and worked to improve the usability.<br><br>Getting the Wishlist button right was key and made me appreciate button placement more.</p>
+          <p>I needed to rethink how I communicated the camera/light toggle. Looking for inspiration, I landed on how iOS’ Phone app swaps between Missed Calls and All with a segmented control. Android doesn’t have a version of this that I could see so I attempted to design one that still felt at home on its OS.<br><br>I also toned down the contextual nature of the buttons, making them persistent and consolidating their toggles as best I could.</p>
         </div>
 
 
         <div class="col-md-6 col-lg-7">
           <picture>
-            <source srcset="img/mug_shop/changes_section@0.5x.png" media="(max-width:767px)">
-            <img src="img/mug_shop/changes_section.png" class="project-img-r" alt="Changes Summary">
+            <source srcset="img/posable/changes_summary@0.5x.png" media="(max-width:767px)">
+            <img src="img/posable/changes_summary.png" class="project-img-r" alt="Changes Summary">
           </picture>
         </div>
 
-        <div class="project-text desktop col-md-6 col-lg-5">
+        <div class="project-text desktop fixed col-md-6 col-lg-5">
           <h3>Iteration</h3>
-          <p>Based on the feedback I was given, I revisted certain areas of the design and worked to improve the usability.<br><br>Getting the Wishlist button right was key and made me appreciate button placement more.</p>
+          <p>I needed to rethink how I communicated the camera/light toggle. Looking for inspiration, I landed on how iOS’ Phone app swaps between Missed Calls and All with a segmented control. Android doesn’t have a version of this that I could see so I attempted to design one that still felt at home on its OS.<br><br>I also toned down the contextual nature of the buttons, making them persistent and consolidating their toggles as best I could.</p>
         </div>
       </div>
       <!--iuser testing/feedback container end-->
     </div>
     <!--user testing/feedback block end-->
 
-    <div class="container">
-      <!--design block-->
-      <div class="project-section">
-        <!--design container-->
-        <div class="project-text fixed col-md-6 col-lg-5">
-          <h3>Designing the Brand</h3>
-          <p>I wanted something that communicated the boldness of coffee. I leaned into the palette of browns and creams using black as a neutral shade for things like icons and orange as a highlight to draw the users attention when necessary.</p>
-        </div>
-        <div class="project-text col-md-6 col-lg-7">
-          <picture>
-            <source srcset="img/mug_shop/style_guide@0.5x.png" media="(max-width:767px)">
-            <img src="img/mug_shop/style_guide@1x.png" class="project-img" alt="Style Guide">
-          </picture>
-        </div>
-      </div>
-      <!--design container end-->
-    </div>
-    <!--design block end-->
 
-    <div class="container">
-
-      <div class="project-section">
-
-        <div class="project-text col-md-6 col-lg-5">
-          <h3>Nailing the Look</h3>
-          <p>I reduced the useage of thick black lines throughout the design. I was relying on it too much to divide content when I could've been spacing elements better to achieve the same thing. This allowed the design to breath a bit more without
-            taking away from the boldness I was trying to convey.</p>
-        </div>
-
-        <div class="col-md-6 col-lg-7">
-          <picture>
-            <source srcset="img/mug_shop/design_changes_1@0.5x.png" media="(max-width:767px)">
-            <img src="img/mug_shop/design_changes_1.png" class="project-img" alt="Style Guide">
-          </picture>
-        </div>
-
-      </div>
-
-    </div>
-    <div class="container">
-
-      <div class="project-text mobile col-md-6 col-lg-5">
-        <p><br>Decluttering the Bag Screen by moving the ‘delete’ function to a hidden slide over menu made it harder to accidentally delete items and the Bag Screen less overwhelming.<br><br>The focus should be on the excitement of purchasing the goods.
-        </p>
-      </div>
-
-      <div class="project-section">
-        <div class="col-md-6 col-lg-7">
-          <picture>
-            <source srcset="img/mug_shop/design_changes_2@0.5x.png" media="(max-width:767px)">
-            <img src="img/mug_shop/design_changes_2.png" class="project-img-r" alt="Style Guide">
-          </picture>
-        </div>
-
-        <div class="project-text desktop col-md-6 col-lg-5">
-          <p><br>Decluttering the Bag Screen by moving the ‘delete’ function to a hidden slide over menu made it harder to accidentally delete items and the Bag Screen less overwhelming.<br><br>The focus should be on the excitement of purchasing the goods.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-    <div class="container">
-
-      <div class="project-section">
-
-        <div class="project-text col-md-6 col-lg-5">
-          <p><br>Reevaluating the visual hierarchy of the ‘Buy Now’ and ‘Add to Bag’ buttons, there was an opportunity to encourage users to purchase the item immediately instead of adding it to the bag, where it could be saved for later and possibly forgotten about.
-            <br>
-            <br>
-          The new emphasis on the ‘Buy Now’ button would hopefully generate sales more often.</p>
-        </div>
-
-        <div class="col-md-6 col-lg-7">
-          <picture>
-            <source srcset="img/mug_shop/design_changes_3@0.5x.png" media="(max-width:767px)">
-            <img src="img/mug_shop/design_changes_3.png" class="project-img" alt="Style Guide">
-          </picture>
-        </div>
-
-      </div>
-    </div>
-    <div class="container">
-      <!--Summary block-->
-      <div class="project-text project-section">
-        <!--summary container-->
-
-        <h3>Summary</h3>
-        <p>This project started off a lot more ‘bold’ in appearance than it ended up being, which is probably for the best. I originally took the idea of a cup of coffee further than maybe I should have, imagining it as if the Impact typeface was in
-          charge of the style guide. Including lots of thick black borders around items and lines to separate content ended up creating a design that felt suffocating and kinda intimidating. In the final screens shown off here, I toned a lot of that
-          back which has given it a much more approachable look. I think I could do more here by using product photos without a background, adding even more white space.</p>
-
-        <p>I’ve also come away with a better appreciation of button placement given the feedback I saw around my ‘Add to Wishlist’ button. I’m ultimately glad I was able to make it work without having to spell it out for the user with a verbal button
-          label.</p>
-
-      </div>
-      <!--summary container end-->
-    </div>
     <!--summary block end-->
 
   </main>
