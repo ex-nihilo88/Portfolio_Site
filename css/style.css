@@ -74,7 +74,7 @@ h3 {
 
 h4 {
   font-size: 1.35em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 img {
@@ -564,6 +564,16 @@ nav>ul>li>a:hover {
   border-radius: 10px;
 }
 
+
+.project-img-banner {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.banner {
+  margin: 20px 0;
+}
+
 .takeaway-banner {
   margin: 10px 0;
   padding: 10px;
@@ -816,6 +826,10 @@ Medium devices (640px and larger)
     padding-bottom: 10px;
   }
 
+  .banner {
+    margin: 20px 0;
+  }
+
   .takeaway-banner {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -825,6 +839,10 @@ Medium devices (640px and larger)
     font-size: 30px;
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  .project-text h4 {
+    font-weight: 700;
   }
 
   .project-text.fixed {
@@ -1097,6 +1115,9 @@ Large devices (1024px or larger)
     .project-header-img {
       height: 490px;
       border-radius: 20px 0 0 20px;
+    }
+    .project-img-banner {
+      border-radius: 20px;
     }
 
     .project-stats {
