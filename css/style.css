@@ -457,7 +457,7 @@ nav>ul>li>a:hover {
 }
 .project-header.poseable {
   background: rgb(92,170,255);
-  background: linear-gradient(45deg, rgba(92,170,255,1) 31%, rgba(38,101,171,1) 69%);
+  background: linear-gradient(45deg, rgba(92,170,255,.7) 31%, rgba(38,101,171,.7) 69%);
 }
 
 .project-header-img {
