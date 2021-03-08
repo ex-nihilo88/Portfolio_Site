@@ -460,6 +460,11 @@ nav>ul>li>a:hover {
   background: linear-gradient(45deg, rgba(92,170,255,.7) 31%, rgba(38,101,171,.7) 69%);
   border-radius: 10px;
 }
+.project-header.ffy {
+  background: rgb(237,185,57);
+  background: linear-gradient(45deg, rgba(237,185,57,.7) 31%, rgba(228,159,23,.8) 69%);
+  border-radius: 10px;
+}
 
 .project-header-img {
   height: 297px;
@@ -559,11 +564,7 @@ nav>ul>li>a:hover {
 }
 /* anything with .mobile will be removed on any screen larger than 640px and replaced with .desktop content, to be used to reorder content between views */
 
-.project-img {
-  margin: 20px 0;
-  border-radius: 10px;
-}
-
+.project-img,
 .project-img-r {
   margin: 20px 0;
   border-radius: 10px;
@@ -782,6 +783,11 @@ Medium devices (640px and larger)
     background: linear-gradient(45deg, rgba(92,170,255,.7) 64%, rgba(38,101,171,.7) 100%);
     border-radius: 20px;
   }
+  .project-header.ffy {
+    background: rgb(237,185,57);
+    background: linear-gradient(45deg, rgba(237,185,57,.7) 64%, rgba(228,159,23,.8) 100%);
+    border-radius: 20px;
+  }
 
   .project-stats {
     padding-top: 15px;
@@ -857,15 +863,17 @@ Medium devices (640px and larger)
     position: sticky;
     top: 75px;
   }
-  .project-img {
+  .project-img,
+  .project-img-r {
     margin: 40px 0;
     border-radius: 10px;
+  }
+
+  .project-img {
     float: right;
   }
 
   .project-img-r {
-    margin: 40px 0;
-    border-radius: 10px;
     float: left;
   }
 
@@ -1199,7 +1207,7 @@ Large devices (1024px or larger)
     }
 
     .project-img {
-      width: 636px;
+      width: 670px;
       height: auto;
       margin-bottom: auto;
       object-fit: fill;
@@ -1207,7 +1215,7 @@ Large devices (1024px or larger)
     }
 
     .project-img-r {
-      width: 636px;
+      width: 670px;
       height: auto;
       margin-top: 40px;
       margin-bottom: auto;
