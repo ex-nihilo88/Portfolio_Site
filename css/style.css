@@ -417,7 +417,7 @@ nav>ul>li>a:hover {
 }
 
 .project-stats h1 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(15,15,15,1);
   font-size: 30px;
   line-height: 30px;
   padding-top: 15px;
@@ -427,7 +427,7 @@ nav>ul>li>a:hover {
 }
 
 .project-stats h4 {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(15,15,15,.75);
   font-size: 14px;
   padding-left: 10px;
   margin-top: 8px;
@@ -435,21 +435,25 @@ nav>ul>li>a:hover {
 }
 
 .project-stats p {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(15,15,15,1);
   font-size: 14px;
   font-weight: 400;
   padding: 0 10px;
   padding-bottom: 15px;
 }
 
+/*
 .project-header {
   background: rgb(213, 83, 38);
   background: linear-gradient(45deg, rgba(213, 83, 38, 1) 31%, rgba(128, 49, 20, 1) 69%);
   border-radius: 10px;
-}
+}*/
+
+
 .project-header.mug-shop {
-  background: rgb(213, 83, 38);
-  background: linear-gradient(45deg, rgba(213, 83, 38, 1) 31%, rgba(128, 49, 20, 1) 69%);
+  background: rgb(232,209,174);
+  background: linear-gradient(45deg, rgba(232,209,174,1) 31%, rgba(157,131,103,1) 69%);
+  border-radius: 10px;
 }
 .project-header.poseable {
   background: rgb(92,170,255);
@@ -768,12 +772,14 @@ Medium devices (640px and larger)
     margin-bottom: 15px;
   }
   .project-header.mug-shop {
-    background: rgb(213, 83, 38);
-    background: linear-gradient(45deg, rgba(213, 83, 38, 1) 64%, rgba(128, 49, 20, 1) 100%);
+    background: rgb(232,209,174);
+    background: linear-gradient(45deg, rgba(232,209,174,.7) 64%, rgba(157,131,103,.7) 100%);
+    border-radius: 20px;
   }
   .project-header.poseable {
     background: rgb(92,170,255);
-    background: linear-gradient(45deg, rgba(92,170,255) 64%, rgba(38,101,171,1) 100%);
+    background: linear-gradient(45deg, rgba(92,170,255,.7) 64%, rgba(38,101,171,.7) 100%);
+    border-radius: 20px;
   }
 
   .project-stats {
