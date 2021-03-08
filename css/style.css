@@ -350,7 +350,7 @@ nav>ul>li>a:hover {
 
 /* about styling */
 .my-story h2 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(15,15,15,1);
   font-size: 30px;
   margin-top: 0;
   padding-top: 8px;
@@ -359,7 +359,7 @@ nav>ul>li>a:hover {
 }
 
 .my-story p {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(15,15,15,1);
   font-size: 16px;
   font-weight: 400;
   padding: 0 20px;
@@ -372,7 +372,7 @@ nav>ul>li>a:hover {
 
 .about-me-header {
   background: rgb(123, 152, 176);
-  background: linear-gradient(45deg, rgba(123, 152, 176, 1) 31%, rgba(83, 108, 132, 1) 69%);
+  background: linear-gradient(45deg, rgba(123, 152, 176, .6) 31%, rgba(83, 108, 132, .6) 69%);
   border-radius: 10px;
 }
 
@@ -458,6 +458,7 @@ nav>ul>li>a:hover {
 .project-header.poseable {
   background: rgb(92,170,255);
   background: linear-gradient(45deg, rgba(92,170,255,.7) 31%, rgba(38,101,171,.7) 69%);
+  border-radius: 10px;
 }
 
 .project-header-img {
@@ -888,7 +889,7 @@ Medium devices (640px and larger)
 
   .about-me-header {
     background: rgb(123, 152, 176);
-    background: linear-gradient(45deg, rgba(123, 152, 176, 1) 64%, rgba(83, 108, 132, 1) 100%);
+    background: linear-gradient(45deg, rgba(123, 152, 176, .6) 64%, rgba(83, 108, 132, .6) 100%);
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
