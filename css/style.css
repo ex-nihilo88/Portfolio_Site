@@ -257,6 +257,11 @@ nav>ul {
   padding: 0;
   margin: 0;
 }
+.takeaway-banner ul {
+  list-style: none;
+  text-align: center;
+
+}
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -514,6 +519,13 @@ nav>ul>li>a:hover {
   background: linear-gradient(45deg, rgba(237,185,57,.7) 31%, rgba(228,159,23,.8) 69%);
   border-radius: 10px;
 }
+.project-header.buyit {
+  background: rgba(49,116,176,1);
+  background: linear-gradient(45deg, rgba(43,130,208,.6) 31%, rgba(25,97,160,.7) 69%);
+  border-radius: 10px;
+}
+
+
 
 .project-header-img {
   height: 297px;
@@ -640,6 +652,11 @@ nav>ul>li>a:hover {
   width: 100%;
   border-radius: 10px;
 }
+
+.takeaway-banner ul {
+  list-style: none;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -837,6 +854,15 @@ Medium devices (640px and larger)
     background: linear-gradient(45deg, rgba(237,185,57,.7) 64%, rgba(228,159,23,.8) 100%);
     border-radius: 20px;
   }
+  .project-header.buyit {
+    background: rgba(49,116,176,1);
+    background: linear-gradient(45deg, rgba(43,130,208,.6) 64%, rgba(25,97,160,.7) 100%);
+    border-radius: 20px;
+  }
+
+
+
+
 
   .project-stats {
     padding-top: 15px;

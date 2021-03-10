@@ -18,6 +18,7 @@
 
 </head>
 
+
 <body>
   <!-- header -->
   <header id="nav-header">
@@ -42,122 +43,223 @@
     </div>
   </header>
 
-  <!-- intro section -->
   <main>
-    <div id="intro">
-      <div class="intro-text container">
-        <h1>Hi, I'm Dan!</h1>
-        <h2>I'm a Visual/UX Designer<br>living in Vancouver, Canada.</h2>
+
+    <div>
+      <!--intro block-->
+      <div id="project-intro" class="container">
+        <!--intro container-->
+        <div class="project-header buyit">
+
+          <div class="img-align col-md-7 col-lg-7">
+            <!--header image-->
+            <picture>
+              <source srcset="img/buyit/project-header@0.5x.png" media="(max-width:640px)">
+              <img src="img/buyit/project-header.png" class="project-header-img" alt="Poseable Mockup">
+            </picture>
+          </div>
+          <!--header image end-->
+
+
+          <div class="project-stats col-md-5 col-lg-5">
+            <!--intro text column-->
+            <h1>Buyit</h1>
+            <h4>2020 - STUDENT PROJECT - 2 WEEKS</h4>
+            <p>Buyit is a classifieds application with a focus on keeping things safe and easy for its users. Gone are the days of looking at janky internet posts and newspaper listings! Buyit provides a clean and friendly UI that let’s anyone find what they need with confidence.</p>
+          </div>
+        </div>
+        <!--intro text column end-->
+
+        <div class="problem card-md-6l card-lg-3l">
+          <!--problem text column-->
+          <h3>Problem</h3>
+          <p>Classifieds can be cluttered, ugly, and leave a lot up to the user to figure out. I wanted to <span>design something that worked for the user, providing a clean, safe environment to sell goods with features that assisted in the process.</span></p>
+        </div>
+        <!--problem text column end-->
+
+        <div class="objective card-md-6r card-lg-3m">
+          <!--objectives text column-->
+          <h3>Objective</h3>
+          <p>Design a mobile classifieds application that included similar but steamlined features as the competition.<br><br>Establish a visual brand with a logo, colour pallete, and style.</p>
+        </div>
+        <!--objectives text column end-->
+
+        <div class="role card-md-6l card-lg-3r">
+          <!--role text column-->
+          <h3>Role</h3>
+          <p>Art Director<br>Wireframing<br>UI Design</p>
+        </div>
+        <!--role text column end-->
+
+
+      </div>
+      <!--intro container end-->
+    </div>
+    <!--intro block end-->
+
+    <div class="container">
+      <!--research block-->
+      <div class="project-section">
+        <!--research container-->
+
+        <div class="project-text fixed col-md-6 col-lg-5">
+          <h3>Research</h3>
+          <p>I started with a competitive analysis of 2 apps that provided the same basic feature set. The initial inspiration for this idea came from my experience using Craigslist which I've never been fond up from a design standpoint.<br><br>The letgo app looked to be going in the same direction I was thinking so I used that as a foundation.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/buyit/comp_analysis@0.5x.png" media="(max-width:767px)">
+            <img src="img/buyit/comp_analysis.png" class="project-img" alt="Competetive Analysis">
+          </picture>
+        </div>
+
+      </div>
+
+      <div class="takeaway-banner col-md-12">
+        <p>While the competition has many features past what I listed, I decided to focus on the following ones;</p>
+        <ul>
+          <li>Easy access to search</li>
+          <li>Prioritize the ability to post</li>
+          <li>Access to a chat and feedback tool</li>
+          <li>Browsing posts</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <div class="project-text fixed col-md-6 col-lg-5">
+          <h3>Ideation and Wireframes</h3>
+          <p>This was meant to be a quick and simple proof of concept and as such, didn't require too many screens. I started with sketching out the basic idea before moving into blocking it out in a low-fidelity wireframe.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/buyit/sketches@0.5x.png" media="(max-width:767px)">
+            <img src="img/buyit/sketches.png" class="project-img" alt="User Flows">
+          </picture>
+
+          <picture>
+            <source srcset="img/buyit/wireframes@0.5x.png" media="(max-width:767px)">
+            <img src="img/buyit/wireframes.png" class="project-img" alt="User Flows">
+          </picture>
+        </div>
+
+      </div>
+
+      <!--research container end-->
+    </div>
+    <!--research block end-->
+
+    <div class="container">
+      <!--idea/wireframe block-->
+      <div class="project-section">
+        <!--idea/wireframe container-->
+        <div class="project-text col-md-6 col-lg-5">
+          <h3>Designing the Brand</h3>
+          <p>A purposely simplistic design. A calming blue and a bright highlight that stay on the sidelines letting the user focus on the listings.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/buyit/style_guide@0.5x.png" media="(max-width:767px)">
+            <img src="img/buyit/style_guide.png" class="project-img" alt="Initial Sketches">
+          </picture>
+        </div>
+
+      </div>
+      <!--user testing/feedback container end-->
+    </div>
+    <!--user testing/feedback block end-->
+
+    <div class="container">
+      <!--user testing/feedback block-->
+
+      <div class="project-section">
+
+        <!-- Remember that because the text is first on mobile view and second on desktop view, the copy is duplicated and hidden when necessary -->
+
+        <div class="project-text mobile col-md-6 col-lg-5">
+          <p><br>I applied it to the basic wireframes and continued iterating on the design from there. Needless to say, this was a very 'work in progress' stage.</p>
+        </div>
+
+
+        <div class="col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/buyit/first_draft@0.5x.png" media="(max-width:767px)">
+            <img src="img/buyit/first_draft.png" class="project-img-r" alt="Changes Summary">
+          </picture>
+        </div>
+
+        <div class="project-text fixed desktop col-md-6 col-lg-5">
+          <p><br>I applied it to the basic wireframes and continued iterating on the design from there. Needless to say, this was a very 'work in progress' stage.</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <!--idea/wireframe block-->
+    <div class="project-section">
+      <!--idea/wireframe container-->
+      <div class="project-text fixed col-md-6 col-lg-5">
+        <h3>Nailing the Look</h3>
+        <p>I really wanted to clean up the overall feel of the design. It looked too juvenile and the hierarchy could be better established.<br><br>There was also an opportunity to showcase a few more features that aligned with the goal of making buying items easier and safer.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-7">
+        <picture>
+          <source srcset="img/buyit/second_draft@0.5x.png" media="(max-width:767px)">
+          <img src="img/buyit/second_draft.png" class="project-img" alt="Initial Sketches">
+        </picture>
+      </div>
+
+    </div>
+    <!--user testing/feedback container end-->
+  </div>
+
+    <div class="container">
+      <!--idea/wireframe block-->
+      <div class="project-section">
+        <!--idea/wireframe container-->
+        <div class="project-text col-md-12 col-lg-12">
+          <h3>Summary</h3>
+          <p>The initial design wasn’t exactly striking. I felt that I had gone too far towards the ‘friendly’ look and it came off a bit childish. I’m glad I was able to bring that design back in my reiteration to make it feel a little more professional.<br><br>If I were to go back and do this again, I would have most likely added more useful tools to the browse screen instead of leaving just a search bar. Streamlining how users find what they want is an important part of classifieds that I didn’t really focus on here.</p>
+        </div>
+
+      </div>
+      <!--user testing/feedback container end-->
+    </div>
+
+
+
+    <div class="container">     <!-- next/previous project space -->
+      <div class="navigation-section">
+
+        <div class="previous-section">
+          <a href="food_for_you.html" class="button">Previous
+            <div class="previous-arrow">
+              <svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" x2="16" y1="12" y2="12"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!--
+        <div class="next-section">
+        <a href="food_for_you.html" class="button-right">Next
+          <div class="button-arrow">
+            <svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" x2="16" y1="12" y2="12"/>
+            </svg>
+          </div>
+        </a>
+        </div>        -->
+
+
       </div>
     </div>
 
-    <!-- projects -->
-    <div id="projects">
-      <!-- whole section block -->
-      <div class="container">
-        <!-- container -->
-        <h2>Recent Projects</h2><!-- section title -->
 
-        <div class="row">
-          <!-- row for content columns -->
-          <div class="project-description-img col-md-7 col-lg-7">
-            <!-- image column -->
-            <a href="mug_shop.html">
-              <picture>
-                <source srcset="img/mug_shop/Mug_Shop_Header@0.5x.png" media="(max-width:767px)">
-                <img src="img/mug_shop/Mug_Shop_Header@1x.png" alt="Mug Shop Image">
-              </picture>
-            </a>
+    <!--summary block end-->
 
-          </div><!-- image column end -->
-          <div class="project-description col-md-5 col-lg-5">
-            <!-- text column -->
-            <h3>Mug Shop</h3>
-            <p>This e-commerce project asked for a design that was simple and accessible while embodying the boldness of the brand. I created multiple low fidelity wireframes before conducting user research for specific work flows. Then I
-              designed
-              the brand style and created the final mockup images.</p>
-              <a href="mug_shop.html" class="button">Read More
-                <div class="button-arrow">
-                  <svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" x2="16" y1="12" y2="12"/>
-                  </svg>
-                </div>
-              </a>
-          </div><!-- text column end -->
-        </div><!-- row for content columns end -->
-
-        <div class="row">
-          <!-- row for content columns -->
-          <div class="project-description-img col-md-7 col-lg-7">
-            <!-- image column -->
-            <a href="poseable.html">
-            <picture>
-              <source srcset="img/posable/Posable_Header@0.5x.png" media="(max-width:767px)">
-              <img src="img/posable/Posable_Header@1x.png" alt="Poseable Image">
-            </picture>
-            </a>
-          </div><!-- image column end -->
-          <div class="project-description col-md-5 col-lg-5">
-            <!-- text column -->
-            <h3>Posable</h3>
-            <p>A human anatomy study app for artists. I designed two versions of this application, one for iOS and the other for Android, adhering to their respective design languages as closely as possible. Competetive research, wireframes and user testing was completed.</p>
-            <a href="poseable.html" class="button">Read More
-              <div class="button-arrow">
-                <svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" x2="16" y1="12" y2="12"/>
-                </svg>
-            </div>
-            </a>
-          </div><!-- text column end -->
-        </div><!-- row for content columns end -->
-
-        <div class="row">
-          <!-- row for content columns -->
-          <div class="project-description-img col-md-7 col-lg-7">
-            <!-- image column -->
-            <a href="food_for_you.html">
-            <picture>
-              <source srcset="img/food_for_you/Food_For_You_Header@0.5x.png" media="(max-width:767px)">
-              <img src="img/food_for_you/Food_For_You_Header@1x.png" alt="Food For You Image">
-            </picture>
-            </a>
-          </div><!-- image column end -->
-          <div class="project-description col-md-5 col-lg-5">
-            <!-- text column -->
-            <h3>Food For You</h3>
-            <p>A responsive web application that provided curated food suggestions. Multiple wireframes were created for each of the different break-points, user research, A/B testing and prototyping was conducted during this project.</p>
-            <a href="food_for_you.html" class="button">Read More
-              <div class="button-arrow">
-                <svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" x2="16" y1="12" y2="12"/>
-                </svg>
-              </div>
-            </a>
-          </div> <!-- text column end -->
-        </div><!-- row for content columns end -->
-
-        <div class="row">
-          <!-- row for content columns -->
-          <div class="project-description-img col-md-7 col-lg-7">
-            <!-- image column -->
-            <a href="buyit.html">
-            <picture>
-              <source srcset="img/buyit/buyit_header@0.5x.png" media="(max-width:767px)">
-              <img src="img/buyit/buyit_header@1x.png" alt="Buyit Image">
-            </picture>
-            </a>
-          </div><!-- image column end -->
-          <div class="project-description col-md-5 col-lg-5">
-            <!-- text column -->
-            <h3>Buyit</h3>
-            <p>A classifieds app that aimed to make buying and selling within the community safe and easy. Competitor research, wireframes, and brand design were all completed by myself in this project.</p>
-            <a href="buyit.html" class="button">Read More
-              <div class="button-arrow">
-                <svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" x2="16" y1="12" y2="12"/>
-                </svg>
-              </div>
-            </a>
-          </div><!-- text column end -->
-        </div><!-- row for content columns end -->
-      </div>
-    </div><!-- whole section block end -->
   </main>
 
   <!-- footer -->
