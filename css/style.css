@@ -11,7 +11,6 @@ Food For You Yellow: #EDB939; rgba(237,185,57,1)
 Buyit Blue: #3174B0; rgba(49,116,176,1)
 */
 
-/* image slide test */
 
 
 /* animation */
@@ -87,6 +86,48 @@ img {
   text-align: center;
 }
 
+/*
+.next-arrow,
+.previous-arrow {
+  height: 50px;
+  width: auto;
+}*/
+
+
+
+.previous-arrow {
+  float: left;
+  transform: rotate(180deg);
+  padding-left: 8px;
+  height: 21px;
+}
+
+.next-arrow {
+  float: right;
+}
+
+.navigation-section {
+  width: 100%;
+  display: inline-block;
+  margin: 40px 0;
+}
+
+.previous-section,
+.next-section {
+  display: inline-block;
+  width: 40%;
+}
+
+
+.previous-section {
+  float: left;
+}
+
+.next-section {
+  float: right;
+}
+
+
 .button-arrow {
   float: right;
   padding-left: 8px;
@@ -94,25 +135,33 @@ img {
 }
 
 
-.button {
+.button,
+.button-right {
+  width: 134px;
   display: inline-block;
   background-color: rgba(15, 15, 15, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   line-height: 21px;
   text-decoration: none;
+  text-align: center;
   padding: 12px;
   border-radius: 5px;
   border: 2px solid rgba(15, 15, 15, 1);
   transition: .2s;
 }
+.button-right {
+  float: right;
+}
 
-.button:hover {
+.button:hover,
+.button-right:hover {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(15, 15, 15, 1);
 }
 
-.button:active {
+.button:active,
+.button-right:active {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(15, 15, 15, 1);
   font-weight: 400;
@@ -1049,6 +1098,13 @@ Large devices (1024px or larger)
 
     .row {
       margin-bottom: 100px;
+    }
+    .navigation-section {
+      width: 80%;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      margin-left: 10%;
+      margin-right: 10%;
     }
 
     .project-description-img {
