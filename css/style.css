@@ -10,9 +10,6 @@ Posable Blue: #5CAAFF; rgba(92,170,255,1)
 Food For You Yellow: #EDB939; rgba(237,185,57,1)
 Buyit Blue: #3174B0; rgba(49,116,176,1)
 */
-
-
-
 /* animation */
 #intro h1 {
   animation: 2s intro-fade 1 ease-out;
@@ -92,9 +89,6 @@ img {
   height: 50px;
   width: auto;
 }*/
-
-
-
 .previous-arrow {
   float: left;
   transform: rotate(180deg);
@@ -118,7 +112,6 @@ img {
   width: 40%;
 }
 
-
 .previous-section {
   float: left;
 }
@@ -127,13 +120,11 @@ img {
   float: right;
 }
 
-
 .button-arrow {
   float: right;
   padding-left: 8px;
   height: 21px;
 }
-
 
 .button,
 .button-right {
@@ -150,6 +141,7 @@ img {
   border: 2px solid rgba(15, 15, 15, 1);
   transition: .2s;
 }
+
 .button-right {
   float: right;
 }
@@ -243,12 +235,9 @@ header {
   width: 100%;
   padding: 10px 0 4px;
   position: fixed;
-
   -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.25);
   -moz-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.25);
   box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.25);
-
-
   z-index: 1;
 }
 
@@ -257,10 +246,10 @@ nav>ul {
   padding: 0;
   margin: 0;
 }
+
 .takeaway-banner ul {
   list-style: none;
   text-align: center;
-
 }
 
 .navtoggle li:not(:last-child) {
@@ -317,22 +306,12 @@ nav>ul>li>a:hover {
   padding: 0 10px;
 }
 
-.container-gry {
-  background-color: rgba(244, 244, 244, 1);
-  display: inline-block;
-  margin-top: 50px;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .row {
   margin-top: 25px;
 }
 
 #projects .row {
   padding-bottom: 50px;
-
 }
 
 .row::after {
@@ -340,7 +319,6 @@ nav>ul>li>a:hover {
   clear: both;
   display: table;
 }
-
 
 #projects {
   margin-top: 311px;
@@ -379,7 +357,6 @@ nav>ul>li>a:hover {
   transition: .5s;
 }
 
-
 #intro p {
   color: rgba(255, 255, 255, .8);
 }
@@ -390,13 +367,14 @@ nav>ul>li>a:hover {
   margin: 0;
   padding-top: 15px;
   padding-bottom: 25px;
-
 }
+
 .project-description h3 {
   font-size: 26px;
   line-height: 30px;
   margin-top: 10px;
 }
+
 .project-description p {
   font-weight: 400;
   margin-bottom: 40px;
@@ -404,7 +382,7 @@ nav>ul>li>a:hover {
 
 /* about styling */
 .my-story h2 {
-  color: rgba(15,15,15,1);
+  color: rgba(15, 15, 15, 1);
   font-size: 30px;
   margin-top: 0;
   padding-top: 8px;
@@ -413,7 +391,7 @@ nav>ul>li>a:hover {
 }
 
 .my-story p {
-  color: rgba(15,15,15,1);
+  color: rgba(15, 15, 15, 1);
   font-size: 16px;
   font-weight: 400;
   padding: 0 20px;
@@ -471,7 +449,7 @@ nav>ul>li>a:hover {
 }
 
 .project-stats h1 {
-  color: rgba(15,15,15,1);
+  color: rgba(15, 15, 15, 1);
   font-size: 30px;
   line-height: 30px;
   padding-top: 15px;
@@ -481,16 +459,16 @@ nav>ul>li>a:hover {
 }
 
 .project-stats h4 {
-  color: rgba(15,15,15,.75);
-  font-size: 14px;
+  color: rgba(15, 15, 15, .75);
+  font-size: 18px;
   padding-left: 10px;
   margin-top: 8px;
   margin-bottom: 30px;
 }
 
 .project-stats p {
-  color: rgba(15,15,15,1);
-  font-size: 14px;
+  color: rgba(15, 15, 15, 1);
+  font-size: 18px;
   font-weight: 400;
   padding: 0 10px;
   padding-bottom: 15px;
@@ -502,30 +480,29 @@ nav>ul>li>a:hover {
   background: linear-gradient(45deg, rgba(213, 83, 38, 1) 31%, rgba(128, 49, 20, 1) 69%);
   border-radius: 10px;
 }*/
-
-
 .project-header.mug-shop {
-  background: rgb(232,209,174);
-  background: linear-gradient(45deg, rgba(232,209,174,1) 31%, rgba(157,131,103,1) 69%);
+  background: rgb(232, 209, 174);
+  background: linear-gradient(45deg, rgba(232, 209, 174, 1) 31%, rgba(157, 131, 103, 1) 69%);
   border-radius: 10px;
 }
+
 .project-header.poseable {
-  background: rgb(92,170,255);
-  background: linear-gradient(45deg, rgba(92,170,255,.7) 31%, rgba(38,101,171,.7) 69%);
+  background: rgb(92, 170, 255);
+  background: linear-gradient(45deg, rgba(92, 170, 255, .7) 31%, rgba(38, 101, 171, .7) 69%);
   border-radius: 10px;
 }
+
 .project-header.ffy {
-  background: rgb(237,185,57);
-  background: linear-gradient(45deg, rgba(237,185,57,.7) 31%, rgba(228,159,23,.8) 69%);
+  background: rgb(237, 185, 57);
+  background: linear-gradient(45deg, rgba(237, 185, 57, .7) 31%, rgba(228, 159, 23, .8) 69%);
   border-radius: 10px;
 }
+
 .project-header.buyit {
-  background: rgba(49,116,176,1);
-  background: linear-gradient(45deg, rgba(43,130,208,.6) 31%, rgba(25,97,160,.7) 69%);
+  background: rgba(49, 116, 176, 1);
+  background: linear-gradient(45deg, rgba(43, 130, 208, .6) 31%, rgba(25, 97, 160, .7) 69%);
   border-radius: 10px;
 }
-
-
 
 .project-header-img {
   height: 297px;
@@ -538,19 +515,17 @@ nav>ul>li>a:hover {
   padding-top: 20px;
 }
 
-.problem {
-  background-color: rgba(244, 244, 244, 1);
-  border-radius: 10px;
-}
-
-.objective {
-  background-color: rgba(244, 244, 244, 1);
-  border-radius: 10px;
-}
-
+.problem,
+.objective,
 .role {
   background-color: rgba(244, 244, 244, 1);
   border-radius: 10px;
+}
+
+.problem p,
+.objective p,
+.role p {
+  font-size: 18px;
 }
 
 .problem h3 {
@@ -564,7 +539,8 @@ nav>ul>li>a:hover {
   font-weight: bold;
 }
 
-.problem p {
+.problem p,
+.objective p {
   font-weight: 400;
   padding-left: 10px;
   padding-right: 10px;
@@ -576,13 +552,6 @@ nav>ul>li>a:hover {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.objective p {
-  font-weight: 400;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
 }
 
 .role h3 {
@@ -599,17 +568,24 @@ nav>ul>li>a:hover {
   padding-right: 10px;
   padding-bottom: 10px;
 }
+
 .disclaimer {
   display: inline;
   text-align: center;
   margin-bottom: 20px;
 }
-.disclaimer span{
+
+.disclaimer span {
   font-weight: bold;
 }
 
 .project-text p {
   font-weight: 400;
+  font-size: 18px;
+}
+
+.project-text h4 {
+  font-weight: 500;
 }
 
 .project-section {
@@ -623,14 +599,13 @@ nav>ul>li>a:hover {
 .desktop {
   display: none;
 }
-/* anything with .mobile will be removed on any screen larger than 640px and replaced with .desktop content, to be used to reorder content between views */
 
+/* anything with .mobile will be removed on any screen larger than 640px and replaced with .desktop content, to be used to reorder content between views */
 .project-img,
 .project-img-r {
   margin: 20px 0;
   border-radius: 10px;
 }
-
 
 .project-img-banner {
   width: 100%;
@@ -653,8 +628,6 @@ nav>ul>li>a:hover {
   border-radius: 10px;
 }
 
-
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -670,16 +643,18 @@ Medium devices (640px and larger)
   .col-md-7 {
     width: 60%;
   }
+
   .col-md-5 {
     width: 40%;
   }
+
   .col-md-6 {
     width: 50%;
   }
 
   .card-md-6l {
     width: 48%;
-    height: 236px;
+    height: 270px;
     margin-top: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -687,7 +662,7 @@ Medium devices (640px and larger)
 
   .card-md-6r {
     width: 48%;
-    height: 236px;
+    height: 270px;
     margin-top: 2%;
     margin-left: 2%;
     margin-bottom: 2%;
@@ -743,7 +718,6 @@ Medium devices (640px and larger)
     display: inline;
   }
 
-
   header {
     text-align: unset;
   }
@@ -756,12 +730,12 @@ Medium devices (640px and larger)
   .navtoggle.responsive nav {
     padding: 0px;
   }
+
   .navtoggle.responsive li {
     display: block;
     padding: 0;
     border-top: 0px;
   }
-
 
   nav>ul {
     margin: 1em 0;
@@ -833,33 +807,33 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    height: 367px;
+    height: 489px;
     margin-bottom: 15px;
   }
+
   .project-header.mug-shop {
-    background: rgb(232,209,174);
-    background: linear-gradient(45deg, rgba(232,209,174,.7) 64%, rgba(157,131,103,.7) 100%);
+    background: rgb(232, 209, 174);
+    background: linear-gradient(45deg, rgba(232, 209, 174, .7) 64%, rgba(157, 131, 103, .7) 100%);
     border-radius: 20px;
   }
+
   .project-header.poseable {
-    background: rgb(92,170,255);
-    background: linear-gradient(45deg, rgba(92,170,255,.7) 64%, rgba(38,101,171,.7) 100%);
+    background: rgb(92, 170, 255);
+    background: linear-gradient(45deg, rgba(92, 170, 255, .7) 64%, rgba(38, 101, 171, .7) 100%);
     border-radius: 20px;
   }
+
   .project-header.ffy {
-    background: rgb(237,185,57);
-    background: linear-gradient(45deg, rgba(237,185,57,.7) 64%, rgba(228,159,23,.8) 100%);
+    background: rgb(237, 185, 57);
+    background: linear-gradient(45deg, rgba(237, 185, 57, .7) 64%, rgba(228, 159, 23, .8) 100%);
     border-radius: 20px;
   }
+
   .project-header.buyit {
-    background: rgba(49,116,176,1);
-    background: linear-gradient(45deg, rgba(43,130,208,.6) 64%, rgba(25,97,160,.7) 100%);
+    background: rgba(49, 116, 176, 1);
+    background: linear-gradient(45deg, rgba(43, 130, 208, .6) 64%, rgba(25, 97, 160, .7) 100%);
     border-radius: 20px;
   }
-
-
-
-
 
   .project-stats {
     padding-top: 15px;
@@ -871,7 +845,7 @@ Medium devices (640px and larger)
   }
 
   .project-header-img {
-    height: 367px;
+    height: 489px;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
   }
@@ -936,6 +910,7 @@ Medium devices (640px and larger)
     position: sticky;
     top: 75px;
   }
+
   .project-img,
   .project-img-r {
     margin: 40px 0;
@@ -987,6 +962,7 @@ Medium devices (640px and larger)
   .my-story {
     padding-top: 15px;
   }
+
   .my-story h2,
   .my-story p {
     padding-left: 5px;
@@ -1122,6 +1098,7 @@ Large devices (1024px or larger)
     .row {
       margin-bottom: 100px;
     }
+
     .navigation-section {
       width: 80%;
       margin-top: 80px;
@@ -1211,6 +1188,7 @@ Large devices (1024px or larger)
       height: 490px;
       border-radius: 20px 0 0 20px;
     }
+
     .project-img-banner {
       border-radius: 20px;
     }
@@ -1231,6 +1209,7 @@ Large devices (1024px or larger)
       font-size: 20px;
       padding-bottom: 25px;
     }
+
     .project-text h4 {
       font-weight: 700;
     }
@@ -1319,6 +1298,7 @@ Large devices (1024px or larger)
       padding-bottom: 30px;
       border-radius: 20px;
     }
+
     .takeaway-banner p {
       margin-left: 25%;
       margin-right: 25%;
