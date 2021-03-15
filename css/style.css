@@ -126,6 +126,7 @@ img {
   height: 21px;
 }
 
+
 .button,
 .button-right {
   width: 134px;
@@ -200,7 +201,9 @@ img {
   width: 50px;
   height: 50px;
   object-fit: scale-down;
-  margin: 10px 15px;
+  margin: 10px 10px;
+  border-radius: 10px;
+
 }
 
 .social-link {
